@@ -122,3 +122,200 @@ Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 690, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+2026-03-27 15:06:44,940 - INFO - Bot initialized successfully
+2026-03-27 15:06:45,434 - INFO - ✅ Commands set successfully
+2026-03-27 15:06:45,434 - INFO - Registering handlers...
+2026-03-27 15:06:45,435 - INFO - ✅ All handlers registered
+2026-03-27 15:06:45,435 - INFO - Registering callbacks...
+2026-03-27 15:06:45,435 - INFO - ✅ All callbacks registered
+2026-03-27 15:06:45,435 - INFO - === BOT STARTED ===
+2026-03-27 15:06:49,856 - INFO - ✅ START command from user 8234178181
+2026-03-27 15:11:03,495 - INFO - ✅ START command from user 8234178181
+2026-03-27 15:13:22,552 - INFO - Bot initialized successfully
+2026-03-27 15:13:23,026 - INFO - ✅ Commands set successfully
+2026-03-27 15:13:23,027 - INFO - Registering handlers...
+2026-03-27 15:13:23,027 - INFO - ✅ All handlers registered
+2026-03-27 15:13:23,027 - INFO - Registering callbacks...
+2026-03-27 15:13:23,028 - INFO - ✅ All callbacks registered
+2026-03-27 15:13:23,028 - INFO - === BOT STARTED ===
+2026-03-27 15:13:37,450 - INFO - ✅ START command from user 8234178181
+2026-03-27 15:13:53,050 - INFO - ✅ START command from user 8234178181
+2026-03-27 15:14:32,802 - INFO - Bot initialized successfully
+2026-03-27 15:14:33,258 - INFO - ✅ Commands set successfully
+2026-03-27 15:14:33,258 - INFO - Registering handlers...
+2026-03-27 15:14:33,259 - INFO - ✅ All handlers registered
+2026-03-27 15:14:33,259 - INFO - Registering callbacks...
+2026-03-27 15:14:33,260 - INFO - ✅ All callbacks registered
+2026-03-27 15:14:33,260 - INFO - === BOT STARTED ===
+2026-03-27 15:15:04,916 - INFO - Bot initialized successfully
+2026-03-27 15:15:06,883 - INFO - ✅ Commands set successfully
+2026-03-27 15:15:06,884 - INFO - Registering handlers...
+2026-03-27 15:15:06,884 - INFO - ✅ All handlers registered
+2026-03-27 15:15:06,885 - INFO - Registering callbacks...
+2026-03-27 15:15:06,885 - INFO - ✅ All callbacks registered
+2026-03-27 15:15:06,885 - INFO - === BOT STARTED ===
+2026-03-27 15:15:11,734 - INFO - Bot initialized successfully
+2026-03-27 15:15:12,147 - INFO - ✅ Commands set successfully
+2026-03-27 15:15:12,147 - INFO - Registering handlers...
+2026-03-27 15:15:12,148 - INFO - ✅ All handlers registered
+2026-03-27 15:15:12,148 - INFO - Registering callbacks...
+2026-03-27 15:15:12,148 - INFO - ✅ All callbacks registered
+2026-03-27 15:15:12,149 - INFO - === BOT STARTED ===
+2026-03-27 15:16:48,092 - INFO - Bot initialized successfully
+2026-03-27 15:16:48,581 - INFO - ✅ Commands set successfully
+2026-03-27 15:16:48,581 - INFO - Registering handlers...
+2026-03-27 15:16:48,581 - INFO - ✅ All handlers registered
+2026-03-27 15:16:48,582 - INFO - Registering callbacks...
+2026-03-27 15:16:48,582 - INFO - ✅ All callbacks registered
+2026-03-27 15:16:48,582 - INFO - === BOT STARTED ===
+2026-03-27 15:16:49,147 - INFO - ✅ START command from user 8234178181
+2026-03-27 15:16:49,148 - INFO - ✅ START command from user 8234178181
+2026-03-27 15:16:53,143 - INFO - ✅ START command from user 8234178181
+2026-03-27 15:17:07,312 - INFO - ✅ START command from user 8234178181
+2026-03-27 15:17:57,344 - INFO - ✅ START command from user 8234178181
+2026-03-27 15:24:41,377 - INFO - Bot initialized successfully
+2026-03-27 15:24:41,813 - INFO - ✅ Commands set successfully
+2026-03-27 15:24:41,814 - INFO - Registering handlers...
+2026-03-27 15:24:41,814 - INFO - ✅ All handlers registered
+2026-03-27 15:24:41,815 - INFO - Registering callbacks...
+2026-03-27 15:24:41,815 - INFO - ✅ All callbacks registered
+2026-03-27 15:24:41,815 - INFO - === BOT STARTED ===
+2026-03-27 15:24:47,429 - INFO - ✅ START command from user 8234178181
+2026-03-27 15:27:56,887 - INFO - Bot initialized successfully
+2026-03-27 15:28:02,340 - INFO - ✅ Commands set successfully
+2026-03-27 15:28:02,341 - INFO - Registering handlers...
+2026-03-27 15:28:02,341 - INFO - ✅ All handlers registered
+2026-03-27 15:28:02,342 - INFO - Registering callbacks...
+2026-03-27 15:28:02,342 - INFO - ✅ All callbacks registered
+2026-03-27 15:28:02,342 - INFO - === BOT STARTED ===
+2026-03-27 15:28:02,999 - INFO - ✅ START command from user 8234178181
+2026-03-27 15:28:21,825 - INFO - ✅ START command from user 8234178181
+2026-03-27 15:51:43,732 - INFO - Bot initialized successfully
+2026-03-27 15:51:44,195 - INFO - ✅ Commands set successfully
+2026-03-27 15:51:44,195 - INFO - Registering handlers...
+2026-03-27 15:51:44,196 - INFO - ✅ All handlers registered
+2026-03-27 15:51:44,196 - INFO - Registering callbacks...
+2026-03-27 15:51:44,196 - INFO - ✅ All callbacks registered
+2026-03-27 15:51:44,197 - INFO - === BOT STARTED ===
+2026-03-27 15:51:50,397 - INFO - ✅ START command from user 8234178181
+2026-03-27 15:52:51,561 - INFO - ✅ START command from user 8234178181
+2026-03-27 16:12:31,790 - INFO - Bot initialized successfully
+2026-03-27 16:12:36,890 - INFO - ✅ Commands set successfully
+2026-03-27 16:12:36,891 - INFO - Registering handlers...
+2026-03-27 16:12:36,892 - INFO - ✅ All handlers registered
+2026-03-27 16:12:36,892 - INFO - Registering callbacks...
+2026-03-27 16:12:36,892 - INFO - ✅ All callbacks registered
+2026-03-27 16:12:36,893 - INFO - === BOT STARTED ===
+2026-03-27 16:32:25,638 - INFO - Bot initialized successfully
+2026-03-27 16:32:28,888 - INFO - ✅ Commands set successfully
+2026-03-27 16:32:28,888 - INFO - Registering handlers...
+2026-03-27 16:32:28,889 - INFO - ✅ All handlers registered
+2026-03-27 16:32:28,889 - INFO - Registering callbacks...
+2026-03-27 16:32:28,890 - INFO - ✅ All callbacks registered
+2026-03-27 16:32:28,890 - INFO - === BOT STARTED ===
+2026-03-27 16:32:44,143 - INFO - ✅ START command from user 8234178181
+2026-03-27 16:35:25,648 - INFO - Bot initialized successfully
+2026-03-27 16:35:26,109 - INFO - ✅ Commands set successfully
+2026-03-27 16:35:26,110 - INFO - Registering handlers...
+2026-03-27 16:35:26,111 - INFO - ✅ All handlers registered
+2026-03-27 16:35:26,111 - INFO - Registering callbacks...
+2026-03-27 16:35:26,111 - INFO - ✅ All callbacks registered
+2026-03-27 16:35:26,112 - INFO - === BOT STARTED ===
+2026-03-27 16:46:50,126 - INFO - Bot initialized successfully
+2026-03-27 16:46:50,933 - INFO - ✅ Commands set successfully
+2026-03-27 16:46:50,933 - INFO - Registering handlers...
+2026-03-27 16:46:50,934 - INFO - ✅ All handlers registered
+2026-03-27 16:46:50,934 - INFO - Registering callbacks...
+2026-03-27 16:46:50,934 - INFO - ✅ All callbacks registered
+2026-03-27 16:46:50,935 - INFO - === BOT STARTED ===
+2026-03-27 16:46:58,358 - INFO - ✅ START command from user 8234178181
+2026-03-27 16:47:33,974 - INFO - Bot initialized successfully
+2026-03-27 16:47:34,425 - INFO - ✅ Commands set successfully
+2026-03-27 16:47:34,426 - INFO - Registering handlers...
+2026-03-27 16:47:34,426 - INFO - ✅ All handlers registered
+2026-03-27 16:47:34,427 - INFO - Registering callbacks...
+2026-03-27 16:47:34,427 - INFO - ✅ All callbacks registered
+2026-03-27 16:47:34,428 - INFO - === BOT STARTED ===
+2026-03-27 16:47:46,053 - INFO - ✅ START command from user 8234178181
+2026-03-27 16:51:55,648 - INFO - Bot initialized successfully
+2026-03-27 16:51:56,120 - INFO - ✅ Commands set successfully
+2026-03-27 16:51:56,120 - INFO - Registering handlers...
+2026-03-27 16:51:56,121 - INFO - ✅ All handlers registered
+2026-03-27 16:51:56,121 - INFO - Registering callbacks...
+2026-03-27 16:51:56,121 - INFO - ✅ All callbacks registered
+2026-03-27 16:51:56,122 - INFO - === BOT STARTED ===
+2026-03-27 16:52:04,309 - ERROR - Bot error: name 'db' is not defined
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 99, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10456, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 55, in start
+    db.create_user_if_not_exists(user_id, message.from_user.username)
+    ^^
+NameError: name 'db' is not defined
+2026-03-27 16:53:27,817 - INFO - Bot initialized successfully
+2026-03-27 16:53:28,370 - INFO - ✅ Commands set successfully
+2026-03-27 16:53:28,370 - INFO - Registering handlers...
+2026-03-27 16:53:28,371 - INFO - ✅ All handlers registered
+2026-03-27 16:53:28,371 - INFO - Registering callbacks...
+2026-03-27 16:53:28,372 - INFO - ✅ All callbacks registered
+2026-03-27 16:53:28,372 - INFO - === BOT STARTED ===
+2026-03-27 16:53:28,897 - INFO - DEBUG: Menu object: <telebot.types.ReplyKeyboardMarkup object at 0x1035b8e60>
+2026-03-27 16:53:28,897 - INFO - DEBUG: Menu type: <class 'telebot.types.ReplyKeyboardMarkup'>
+2026-03-27 16:53:29,330 - INFO - ✅ Message sent to 8234178181 with menu
+2026-03-27 16:54:10,147 - INFO - User 8234178181 viewed subscribers menu
+2026-03-27 16:54:12,789 - INFO - User 8234178181 viewed views menu
+2026-03-27 16:54:14,956 - INFO - User 8234178181 viewed reactions menu
+2026-03-27 16:54:15,827 - INFO - User 8234178181 viewed orders menu
+2026-03-27 16:54:27,818 - ERROR - Error sending question to group: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-03-27 16:54:32,931 - INFO - User 8234178181 viewed balance
+2026-03-27 16:54:59,728 - INFO - User 8234178181 viewed subscribers menu
+2026-03-27 17:20:59,556 - INFO - Bot initialized successfully
+2026-03-27 17:20:59,996 - INFO - ✅ Commands set successfully
+2026-03-27 17:20:59,997 - INFO - Registering handlers...
+2026-03-27 17:20:59,997 - INFO - ✅ All handlers registered
+2026-03-27 17:20:59,997 - INFO - Registering callbacks...
+2026-03-27 17:20:59,998 - INFO - ✅ All callbacks registered
+2026-03-27 17:20:59,998 - INFO - === BOT STARTED ===
+2026-03-27 17:21:22,714 - ERROR - Error sending text question to group: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-03-27 17:21:31,517 - INFO - User 8234178181 viewed orders menu
+2026-03-27 17:21:54,580 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: inline keyboard expected
+2026-03-27 17:21:54,581 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10456, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Xaru/Desktop/bot.zakaz/handlers/user_handlers.py", line 359, in back_to_main_callback
+    bot.edit_message_text("Главное меню:", call.message.chat.id, call.message.message_id,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 5473, in edit_message_text
+    result = apihelper.edit_message_text(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 1678, in edit_message_text
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: inline keyboard expected
+
+2026-03-27 17:22:34,558 - INFO - User 8234178181 viewed balance
