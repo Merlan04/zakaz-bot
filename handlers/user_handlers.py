@@ -3,7 +3,7 @@ import logging
 from database import db
 from utils import reset_state, format_payment_message
 from utils.formatters import format_user_question
-from config import CRYPTO_ADDRESSES, ADMIN_ID
+from config import CRYPTO_ADDRESSES, ADMIN_ID, GROUP_ID, PAYMENT_GROUP_ID
 
 logger = logging.getLogger(__name__)
 
@@ -54,6 +54,7 @@ def register_user_handlers(bot, user_states):
         )
         
         bot.send_message(message.chat.id, info_message, reply_markup=markup, parse_mode='HTML')
+        logger.info(f"User {user_id} viewed subscribers menu")
 
     # ================== VIEWS BUTTON ==================
     @bot.message_handler(func=lambda message: message.text == "👀 Просмотры")
@@ -83,6 +84,7 @@ def register_user_handlers(bot, user_states):
         )
         
         bot.send_message(message.chat.id, info_message, reply_markup=markup, parse_mode='HTML')
+        logger.info(f"User {user_id} viewed views menu")
 
     # ================== REACTIONS BUTTON ==================
     @bot.message_handler(func=lambda message: message.text == "❤ Голоса/Реакции")
@@ -111,6 +113,7 @@ def register_user_handlers(bot, user_states):
         )
         
         bot.send_message(message.chat.id, info_message, reply_markup=markup, parse_mode='HTML')
+        logger.info(f"User {user_id} viewed reactions menu")
 
     # ================== MY ORDERS BUTTON ==================
     @bot.message_handler(func=lambda message: message.text == "⚙ Мои заказы")
@@ -156,6 +159,7 @@ def register_user_handlers(bot, user_states):
         )
         
         bot.send_message(message.chat.id, full_message, reply_markup=markup, parse_mode='HTML')
+        logger.info(f"User {user_id} viewed orders menu")
 
     # ================== BALANCE BUTTON ==================
     @bot.message_handler(func=lambda message: message.text == "💳 Баланс")
@@ -187,6 +191,7 @@ def register_user_handlers(bot, user_states):
         )
 
         bot.send_message(message.chat.id, info_message, reply_markup=markup, parse_mode='HTML')
+        logger.info(f"User {user_id} viewed balance")
 
     # ================== ASK QUESTION BUTTON ==================
     @bot.message_handler(func=lambda message: message.text == "❓ Задать вопрос")
@@ -205,7 +210,7 @@ def register_user_handlers(bot, user_states):
             "  • На вопросы о продаже бота не отвечаем\n"
             "  • Скидок нет\n"
             "  • Отвечаем 24-48 часов\n\n"
-            "👉 Напишите ваш вопрос ниже одним сообщением:"
+            "👉 Напишите ваш вопрос ниже одн��м сообщением:"
         )
         
         bot.send_message(message.chat.id, info_message, parse_mode='HTML')
@@ -215,37 +220,28 @@ def register_user_handlers(bot, user_states):
     @bot.message_handler(func=lambda message: user_states.get(message.from_user.id, {}).get("step") == "ask_admin")
     def ask_admin_handler(message):
         user_id = message.from_user.id
-        username = message.from_user.username
+        username = message.from_user.username or "No username"
 
-        # ОТПРАВИТЬ ВОПРОС АДМИНУ
-        question_header = f"❓ <b>Новый вопрос от пользователя</b>\n\n👤 ID: {user_id}\n👤 Username: @{username}\n\n📝 Сообщение:"
-        bot.forward_message(ADMIN_ID, message.chat.id, message.message_id)
-        bot.send_message(ADMIN_ID, question_header, parse_mode='HTML')
+        # 📤 ОТПРАВИТЬ ВОПРОС В ПЛАТЕЖНУЮ ГРУППУ
+        question_header = (
+            f"❓ <b>Новый вопрос от пользователя</b>\n\n"
+            f"👤 ID: <code>{user_id}</code>\n"
+            f"👤 Username: @{username}\n\n"
+            f"📝 Сообщение:"
+        )
+        
+        try:
+            bot.forward_message(PAYMENT_GROUP_ID, message.chat.id, message.message_id)
+            bot.send_message(PAYMENT_GROUP_ID, question_header, parse_mode='HTML')
+            logger.info(f"Question from user {user_id} (@{username}) sent to PAYMENT_GROUP")
+        except Exception as e:
+            logger.error(f"Error sending question to group: {e}")
+            bot.send_message(message.chat.id, "❌ Ошибка отправки. Попробуйте позже.", reply_markup=get_main_menu())
+            return
 
         bot.send_message(message.chat.id, "✅ Ваш вопрос отправлен администратору.\n⏳ Ожидайте ответа здесь в течение 24-48 часов.",
                         reply_markup=get_main_menu())
-        logger.info(f"Question from user {user_id} (@{username}) sent to admin")
         reset_state(user_states, user_id)
-
-    @bot.message_handler(func=lambda message: message.from_user.id == ADMIN_ID and message.reply_to_message)
-    def admin_reply_handler(message):
-        if message.reply_to_message.forward_from and message.reply_to_message.forward_from.id:
-            user_id = message.reply_to_message.forward_from.id
-            if message.text:
-                bot.send_message(user_id, f"💬 <b>Ответ от администратора:</b>\n\n{message.text}", parse_mode='HTML')
-            elif message.photo:
-                bot.send_photo(user_id, message.photo[-1].file_id, caption=f"💬 Ответ от администратора\n\n{message.caption or ''}")
-            elif message.video:
-                bot.send_video(user_id, message.video.file_id, caption=f"💬 Ответ от администратора\n\n{message.caption or ''}")
-            elif message.document:
-                bot.send_document(user_id, message.document.file_id, caption=f"💬 Ответ от администратора\n\n{message.caption or ''}")
-            else:
-                bot.send_message(user_id, "💬 Администратор отправил вам ответ.")
-            
-            bot.reply_to(message, f"✅ Ответ успешно отправлен пользователю {user_id}")
-            logger.info(f"Admin reply sent to user {user_id}")
-        else:
-            bot.reply_to(message, "⚠️ Ошибка: не удалось определить пользователя")
 
     @bot.message_handler(func=lambda message: message.text in ["🔙 Назад", "🔚 Домой"])
     def go_back(message):
@@ -253,14 +249,110 @@ def register_user_handlers(bot, user_states):
         reset_state(user_states, user_id)
         bot.send_message(message.chat.id, "Вы вернулись в главное меню 👇", reply_markup=get_main_menu())
 
+    # ================== DEPOSIT HANDLERS ==================
+
+    @bot.message_handler(func=lambda message: user_states.get(message.from_user.id, {}).get("step") == "deposit_crypto")
+    def deposit_crypto_handler(message):
+        user_id = message.from_user.id
+        text = message.text.strip()
+
+        if text in ["🔚 Домой", "/start"]:
+            reset_state(user_states, user_id)
+            bot.send_message(message.chat.id, "Главное меню", reply_markup=get_main_menu())
+            return
+
+        if text in CRYPTO_ADDRESSES:
+            msg = bot.send_message(message.chat.id,
+                                   f"💰 Введите сумму пополнения (минимум {db.get_setting('min_deposit')}$):")
+            user_states[user_id] = {"step": "deposit_amount", "crypto": text}
+            bot.register_next_step_handler(msg, deposit_amount_handler, bot, user_states)
+        else:
+            bot.send_message(message.chat.id, "⚠️ Выберите валюту из предложенных:")
+
+    def deposit_amount_handler(message, bot, user_states):
+        user_id = message.from_user.id
+        text = message.text.strip()
+
+        if text in ["🔚 Домой", "/start"]:
+            reset_state(user_states, user_id)
+            bot.send_message(message.chat.id, "Главное меню", reply_markup=get_main_menu())
+            return
+
+        if not text.replace('.', '', 1).isdigit():
+            bot.send_message(message.chat.id, "⚠️ Неправильное число. Введите правильное:")
+            return
+
+        amount = float(text)
+        min_dep = db.get_setting('min_deposit')
+
+        if amount < min_dep:
+            bot.send_message(message.chat.id, f"⚠️ Введите число больше {min_dep}")
+            return
+
+        crypto = user_states[user_id]["crypto"]
+        db.create_temp_payment(user_id, amount, crypto)
+
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        markup.add("✅ Я заплатил")
+        markup.add("🔚 Домой")
+
+        payment_msg = format_payment_message(amount, crypto)
+        bot.send_message(message.chat.id, payment_msg, reply_markup=markup, parse_mode='Markdown')
+
+        user_states[user_id] = {"step": "deposit_confirm", "amount": amount, "crypto": crypto}
+
+    @bot.message_handler(
+        func=lambda message: user_states.get(message.from_user.id, {}).get("step") == "deposit_confirm")
+    def deposit_confirm_handler(message):
+        user_id = message.from_user.id
+        text = message.text.strip()
+
+        if text in ["🔚 Домой", "/start"]:
+            reset_state(user_states, user_id)
+            bot.send_message(message.chat.id, "Главное меню", reply_markup=get_main_menu())
+            return
+
+        if text == "✅ Я заплатил":
+            amount = user_states[user_id].get("amount", 0)
+            crypto = user_states[user_id].get("crypto", "")
+
+            # 💳 ОТПРАВИТЬ ЗАПРОС ПЛАТЕЖА В ПЛАТЕЖНУЮ ГРУППУ
+            markup = types.InlineKeyboardMarkup(row_width=2)
+            markup.add(
+                types.InlineKeyboardButton("✅ Принять", callback_data=f"accept_payment_{user_id}"),
+                types.InlineKeyboardButton("❌ Отклонить", callback_data=f"reject_payment_{user_id}")
+            )
+
+            payment_request = (
+                f"💳 <b>Новый платеж</b>\n\n"
+                f"👤 ID: <code>{user_id}</code>\n"
+                f"💰 Сумма: <b>${amount:.2f}</b>\n"
+                f"🪙 Валюта: {crypto}\n"
+                f"📅 Время: <code>{message.date}</code>"
+            )
+            
+            try:
+                bot.send_message(PAYMENT_GROUP_ID, payment_request, reply_markup=markup, parse_mode='HTML')
+                logger.info(f"Payment request from user {user_id}: {amount}$ {crypto}")
+            except Exception as e:
+                logger.error(f"Error sending payment to group: {e}")
+
+            bot.send_message(user_id, "⏳ Пров��рка...\nВаш счет будет автоматически пополнен в течение 1-3 минут.",
+                             reply_markup=get_main_menu())
+            reset_state(user_states, user_id)
+            return
+
+        reset_state(user_states, user_id)
+        bot.send_message(message.chat.id, "Пополнение отменено.", reply_markup=get_main_menu())
+
+
     # ================== CALLBACK HANDLERS ==================
     
     @bot.callback_query_handler(func=lambda call: call.data == "back_to_main")
     def back_to_main_callback(call):
         user_id = call.from_user.id
         reset_state(user_states, user_id)
-        bot.send_message(call.message.chat.id, "Главное меню:", reply_markup=get_main_menu())
-        bot.delete_message(call.message.chat.id, call.message.message_id)
+        bot.edit_message_text("Главное меню:", call.message.chat.id, call.message.message_id, reply_markup=get_main_menu())
 
 
 def get_main_menu():
