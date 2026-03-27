@@ -5,10 +5,11 @@ load_dotenv()
 
 TOKEN = os.getenv('TOKEN')
 ADMIN_ID = int(os.getenv('ADMIN_ID'))
-GROUP_ID = int(os.getenv('GROUP_ID'))  # Добавить GROUP_ID
+GROUP_ID = int(os.getenv('GROUP_ID'))
+PAYMENT_GROUP_ID = int(os.getenv('PAYMENT_GROUP_ID'))
 
-if not TOKEN or not ADMIN_ID or not GROUP_ID:
-    raise ValueError("TOKEN, ADMIN_ID или GROUP_ID не найдены в .env файле!")
+if not TOKEN or not ADMIN_ID or not GROUP_ID or not PAYMENT_GROUP_ID:
+    raise ValueError("Не найдены необходимые переменные в .env файле!")
 
 # Database settings
 DB_NAME = 'bot_database.db'
