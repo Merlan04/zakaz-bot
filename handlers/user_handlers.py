@@ -219,46 +219,137 @@ def register_user_handlers(bot, user_states):
             "  • На вопросы о продаже бота не отвечаем\n"
             "  • Скидок нет\n"
             "  • Отвечаем 24-48 часов\n\n"
-            "👉 Напишите ваш вопрос ниже одним сообщением:"
+            "📎 <b>Вы можете отправить:</b>\n"
+            "  • Текстовое сообщение\n"
+            "  • Фото\n"
+            "  • Файл\n"
+            "  • Видео\n\n"
+            "👉 Отправьте ваше сообщение ниже:"
         )
 
         bot.send_message(message.chat.id, info_message, parse_mode='HTML')
-
         user_states[user_id] = {"step": "ask_admin"}
 
-    @bot.message_handler(func=lambda message: user_states.get(message.from_user.id, {}).get("step") == "ask_admin")
-    def ask_admin_handler(message):
+    # Обработчик текста
+    @bot.message_handler(func=lambda message: user_states.get(message.from_user.id, {}).get(
+        "step") == "ask_admin" and message.content_type == 'text')
+    def ask_admin_text_handler(message):
         user_id = message.from_user.id
         username = message.from_user.username or "No username"
 
-        # 📤 ОТПРАВИТЬ ВОПРОС В ПЛАТЕЖНУЮ ГРУППУ
         question_header = (
             f"❓ <b>Новый вопрос от пользователя</b>\n\n"
             f"👤 ID: <code>{user_id}</code>\n"
-            f"👤 Username: @{username}\n\n"
-            f"📝 Сообщение:"
+            f"👤 Username: @{username}\n"
+            f"📝 Тип: Текст\n\n"
+            f"<b>Сообщение:</b>\n{message.text}"
         )
 
         try:
-            bot.forward_message(PAYMENT_GROUP_ID, message.chat.id, message.message_id)
             bot.send_message(PAYMENT_GROUP_ID, question_header, parse_mode='HTML')
-            logger.info(f"Question from user {user_id} (@{username}) sent to PAYMENT_GROUP")
+            logger.info(f"Text question from user {user_id} (@{username}) sent to PAYMENT_GROUP")
         except Exception as e:
-            logger.error(f"Error sending question to group: {e}")
+            logger.error(f"Error sending text question to group: {e}")
             bot.send_message(message.chat.id, "❌ Ошибка отправки. Попробуйте позже.", reply_markup=get_main_menu())
             return
 
         bot.send_message(message.chat.id,
-                         "✅ Ваш вопрос отправлен администратору.\n⏳ Ожидайте ответа здесь в течение 24-48 часов.",
+                         "✅ Ваш вопрос отправлен администратору.\n⏳ Ожидайте ответа в течение 24-48 часов.",
                          reply_markup=get_main_menu())
         reset_state(user_states, user_id)
 
-    @bot.message_handler(func=lambda message: message.text in ["🔙 Назад", "🔚 Домой"])
-    def go_back(message):
+    # Обработчик фото
+    @bot.message_handler(func=lambda message: user_states.get(message.from_user.id, {}).get(
+        "step") == "ask_admin" and message.content_type == 'photo')
+    def ask_admin_photo_handler(message):
         user_id = message.from_user.id
-        reset_state(user_states, user_id)
-        bot.send_message(message.chat.id, "Вы вернулись в главное меню 👇", reply_markup=get_main_menu())
+        username = message.from_user.username or "No username"
+        photo_text = message.caption or "Фото без описания"
 
+        question_header = (
+            f"❓ <b>Новый вопрос от пользователя</b>\n\n"
+            f"👤 ID: <code>{user_id}</code>\n"
+            f"👤 Username: @{username}\n"
+            f"📸 Тип: Фото\n\n"
+            f"<b>Описание:</b>\n{photo_text}"
+        )
+
+        try:
+            # Получаем самое качественное фото
+            file_id = message.photo[-1].file_id
+            bot.send_photo(PAYMENT_GROUP_ID, file_id, caption=question_header, parse_mode='HTML')
+            logger.info(f"Photo question from user {user_id} (@{username}) sent to PAYMENT_GROUP")
+        except Exception as e:
+            logger.error(f"Error sending photo question to group: {e}")
+            bot.send_message(message.chat.id, "❌ Ошибка отправки. Попробуйте позже.", reply_markup=get_main_menu())
+            return
+
+        bot.send_message(message.chat.id,
+                         "✅ Ваше фото отправлено администратору.\n⏳ Ожидайте ответа в течение 24-48 часов.",
+                         reply_markup=get_main_menu())
+        reset_state(user_states, user_id)
+
+    # Обработчик файлов
+    @bot.message_handler(func=lambda message: user_states.get(message.from_user.id, {}).get(
+        "step") == "ask_admin" and message.content_type == 'document')
+    def ask_admin_file_handler(message):
+        user_id = message.from_user.id
+        username = message.from_user.username or "No username"
+        file_name = message.document.file_name
+        file_text = message.caption or "Файл без описания"
+
+        question_header = (
+            f"❓ <b>Новый вопрос от пользователя</b>\n\n"
+            f"👤 ID: <code>{user_id}</code>\n"
+            f"👤 Username: @{username}\n"
+            f"📄 Тип: Файл\n"
+            f"📛 Название: <code>{file_name}</code>\n\n"
+            f"<b>Описание:</b>\n{file_text}"
+        )
+
+        try:
+            file_id = message.document.file_id
+            bot.send_document(PAYMENT_GROUP_ID, file_id, caption=question_header, parse_mode='HTML')
+            logger.info(f"File question from user {user_id} (@{username}) sent to PAYMENT_GROUP")
+        except Exception as e:
+            logger.error(f"Error sending file question to group: {e}")
+            bot.send_message(message.chat.id, "❌ Ошибка отправки. Попробуйте позже.", reply_markup=get_main_menu())
+            return
+
+        bot.send_message(message.chat.id,
+                         "✅ Ваш файл отправлен администратору.\n⏳ Ожидайте ответа в течение 24-48 часов.",
+                         reply_markup=get_main_menu())
+        reset_state(user_states, user_id)
+
+    # Обработчик видео
+    @bot.message_handler(func=lambda message: user_states.get(message.from_user.id, {}).get(
+        "step") == "ask_admin" and message.content_type == 'video')
+    def ask_admin_video_handler(message):
+        user_id = message.from_user.id
+        username = message.from_user.username or "No username"
+        video_text = message.caption or "Видео без описания"
+
+        question_header = (
+            f"❓ <b>Новый вопрос от пользователя</b>\n\n"
+            f"👤 ID: <code>{user_id}</code>\n"
+            f"👤 Username: @{username}\n"
+            f"🎥 Тип: Видео\n\n"
+            f"<b>Описание:</b>\n{video_text}"
+        )
+
+        try:
+            file_id = message.video.file_id
+            bot.send_video(PAYMENT_GROUP_ID, file_id, caption=question_header, parse_mode='HTML')
+            logger.info(f"Video question from user {user_id} (@{username}) sent to PAYMENT_GROUP")
+        except Exception as e:
+            logger.error(f"Error sending video question to group: {e}")
+            bot.send_message(message.chat.id, "❌ Ошибка отправки. Попробуйте позже.", reply_markup=get_main_menu())
+            return
+
+        bot.send_message(message.chat.id,
+                         "✅ Ваше видео отправлено администратору.\n⏳ Ожидайте ответа в течение 24-48 часов.",
+                         reply_markup=get_main_menu())
+        reset_state(user_states, user_id)
     # ================== CALLBACK HANDLERS ==================
 
     @bot.callback_query_handler(func=lambda call: call.data == "back_to_main")
