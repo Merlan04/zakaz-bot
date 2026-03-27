@@ -8,6 +8,15 @@ from config import CRYPTO_ADDRESSES, ADMIN_ID, GROUP_ID, PAYMENT_GROUP_ID
 logger = logging.getLogger(__name__)
 
 
+def get_main_menu():
+    """Получить главное меню с кнопками"""
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+    markup.add("👥 Подписчики", "👀 Просмотры")
+    markup.add("❤ Голоса/Реакции", "⚙ Мои заказы")
+    markup.add("💳 Баланс", "❓ Задать вопрос")
+    return markup
+
+
 def register_user_handlers(bot, user_states):
     """Регистрировать обработчики пользователя"""
 
@@ -31,7 +40,7 @@ def register_user_handlers(bot, user_states):
     def show_subscribers_info(message):
         user_id = message.from_user.id
         reset_state(user_states, user_id)
-        
+
         info_message = (
             "👥 <b>ПОДПИСЧИКИ</b>\n\n"
             "Услуга добавления подписчиков на ваш канал\n\n"
@@ -45,14 +54,14 @@ def register_user_handlers(bot, user_states):
             "💰 Цена: от $2.00\n\n"
             "Нажмите для создания заказа 👇"
         )
-        
+
         markup = types.InlineKeyboardMarkup(row_width=1)
         markup.add(
             types.InlineKeyboardButton("➕ Создать заказ", callback_data="order_subscribers"),
             types.InlineKeyboardButton("📋 Мои заказы подписчиков", callback_data="my_subs_orders"),
             types.InlineKeyboardButton("🔙 Назад", callback_data="back_to_main")
         )
-        
+
         bot.send_message(message.chat.id, info_message, reply_markup=markup, parse_mode='HTML')
         logger.info(f"User {user_id} viewed subscribers menu")
 
@@ -61,7 +70,7 @@ def register_user_handlers(bot, user_states):
     def show_views_info(message):
         user_id = message.from_user.id
         reset_state(user_states, user_id)
-        
+
         info_message = (
             "👀 <b>ПРОСМОТРЫ</b>\n\n"
             "Увеличение количества просмотров ваших видео\n\n"
@@ -75,14 +84,14 @@ def register_user_handlers(bot, user_states):
             "💰 Цена: от $1.50\n\n"
             "Нажмите для создания заказа 👇"
         )
-        
+
         markup = types.InlineKeyboardMarkup(row_width=1)
         markup.add(
             types.InlineKeyboardButton("➕ Создать заказ", callback_data="order_views"),
             types.InlineKeyboardButton("📋 Мои заказы просмотров", callback_data="my_views_orders"),
             types.InlineKeyboardButton("🔙 Назад", callback_data="back_to_main")
         )
-        
+
         bot.send_message(message.chat.id, info_message, reply_markup=markup, parse_mode='HTML')
         logger.info(f"User {user_id} viewed views menu")
 
@@ -91,7 +100,7 @@ def register_user_handlers(bot, user_states):
     def show_reactions_info(message):
         user_id = message.from_user.id
         reset_state(user_states, user_id)
-        
+
         info_message = (
             "❤️ <b>ГОЛОСА/РЕАКЦИИ</b>\n\n"
             "Добавление лайков и реакций на ваш контент\n\n"
@@ -105,13 +114,13 @@ def register_user_handlers(bot, user_states):
             "💰 Цена: от $3.00\n\n"
             "⚠️ <b>Статус: Скоро доступно!</b>"
         )
-        
+
         markup = types.InlineKeyboardMarkup(row_width=1)
         markup.add(
             types.InlineKeyboardButton("🔔 Уведомить когда откроется", callback_data="notify_reactions"),
             types.InlineKeyboardButton("🔙 Назад", callback_data="back_to_main")
         )
-        
+
         bot.send_message(message.chat.id, info_message, reply_markup=markup, parse_mode='HTML')
         logger.info(f"User {user_id} viewed reactions menu")
 
@@ -120,7 +129,7 @@ def register_user_handlers(bot, user_states):
     def show_my_orders(message):
         user_id = message.from_user.id
         reset_state(user_states, user_id)
-        
+
         info_message = (
             "⚙️ <b>МОИ ЗАКАЗЫ</b>\n\n"
             "Управление и отслеживание всех ваших заказов\n\n"
@@ -135,9 +144,9 @@ def register_user_handlers(bot, user_states):
             "  • Убедитесь в доступности\n"
             "  • Следите за статусом\n"
         )
-        
+
         orders = db.get_user_orders(user_id, limit=5)
-        
+
         if orders:
             orders_text = "📦 <b>Ваши последние заказы:</b>\n\n"
             for order in orders:
@@ -145,11 +154,11 @@ def register_user_handlers(bot, user_states):
                 status_emoji = "✅" if status == "completed" else "⏳" if status == "processing" else "❌"
                 orders_text += f"{status_emoji} #{order_id} • {service_type} — {quantity} шт\n"
                 orders_text += f"   Статус: {status} | Дата: {date}\n\n"
-            
+
             full_message = info_message + "\n" + orders_text
         else:
             full_message = info_message + "\n\n❌ <b>У вас пока нет заказов</b>"
-        
+
         markup = types.InlineKeyboardMarkup(row_width=2)
         markup.add(
             types.InlineKeyboardButton("📋 Все заказы", callback_data="all_orders"),
@@ -157,7 +166,7 @@ def register_user_handlers(bot, user_states):
             types.InlineKeyboardButton("❓ Инструкция", callback_data="orders_help"),
             types.InlineKeyboardButton("🔙 Назад", callback_data="back_to_main")
         )
-        
+
         bot.send_message(message.chat.id, full_message, reply_markup=markup, parse_mode='HTML')
         logger.info(f"User {user_id} viewed orders menu")
 
@@ -181,7 +190,7 @@ def register_user_handlers(bot, user_states):
             "⚡ Пополнение моментальное\n"
             "✅ Без комиссий\n"
         )
-        
+
         markup = types.InlineKeyboardMarkup(row_width=2)
         markup.add(
             types.InlineKeyboardButton("➕ Пополнить", callback_data="deposit_crypto"),
@@ -210,11 +219,11 @@ def register_user_handlers(bot, user_states):
             "  • На вопросы о продаже бота не отвечаем\n"
             "  • Скидок нет\n"
             "  • Отвечаем 24-48 часов\n\n"
-            "👉 Напишите ваш вопрос ниже одн��м сообщением:"
+            "👉 Напишите ваш вопрос ниже одним сообщением:"
         )
-        
+
         bot.send_message(message.chat.id, info_message, parse_mode='HTML')
-        
+
         user_states[user_id] = {"step": "ask_admin"}
 
     @bot.message_handler(func=lambda message: user_states.get(message.from_user.id, {}).get("step") == "ask_admin")
@@ -229,7 +238,7 @@ def register_user_handlers(bot, user_states):
             f"👤 Username: @{username}\n\n"
             f"📝 Сообщение:"
         )
-        
+
         try:
             bot.forward_message(PAYMENT_GROUP_ID, message.chat.id, message.message_id)
             bot.send_message(PAYMENT_GROUP_ID, question_header, parse_mode='HTML')
@@ -239,8 +248,9 @@ def register_user_handlers(bot, user_states):
             bot.send_message(message.chat.id, "❌ Ошибка отправки. Попробуйте позже.", reply_markup=get_main_menu())
             return
 
-        bot.send_message(message.chat.id, "✅ Ваш вопрос отправлен администратору.\n⏳ Ожидайте ответа здесь в течение 24-48 часов.",
-                        reply_markup=get_main_menu())
+        bot.send_message(message.chat.id,
+                         "✅ Ваш вопрос отправлен администратору.\n⏳ Ожидайте ответа здесь в течение 24-48 часов.",
+                         reply_markup=get_main_menu())
         reset_state(user_states, user_id)
 
     @bot.message_handler(func=lambda message: message.text in ["🔙 Назад", "🔚 Домой"])
@@ -249,116 +259,11 @@ def register_user_handlers(bot, user_states):
         reset_state(user_states, user_id)
         bot.send_message(message.chat.id, "Вы вернулись в главное меню 👇", reply_markup=get_main_menu())
 
-    # ================== DEPOSIT HANDLERS ==================
-
-    @bot.message_handler(func=lambda message: user_states.get(message.from_user.id, {}).get("step") == "deposit_crypto")
-    def deposit_crypto_handler(message):
-        user_id = message.from_user.id
-        text = message.text.strip()
-
-        if text in ["🔚 Домой", "/start"]:
-            reset_state(user_states, user_id)
-            bot.send_message(message.chat.id, "Главное меню", reply_markup=get_main_menu())
-            return
-
-        if text in CRYPTO_ADDRESSES:
-            msg = bot.send_message(message.chat.id,
-                                   f"💰 Введите сумму пополнения (минимум {db.get_setting('min_deposit')}$):")
-            user_states[user_id] = {"step": "deposit_amount", "crypto": text}
-            bot.register_next_step_handler(msg, deposit_amount_handler, bot, user_states)
-        else:
-            bot.send_message(message.chat.id, "⚠️ Выберите валюту из предложенных:")
-
-    def deposit_amount_handler(message, bot, user_states):
-        user_id = message.from_user.id
-        text = message.text.strip()
-
-        if text in ["🔚 Домой", "/start"]:
-            reset_state(user_states, user_id)
-            bot.send_message(message.chat.id, "Главное меню", reply_markup=get_main_menu())
-            return
-
-        if not text.replace('.', '', 1).isdigit():
-            bot.send_message(message.chat.id, "⚠️ Неправильное число. Введите правильное:")
-            return
-
-        amount = float(text)
-        min_dep = db.get_setting('min_deposit')
-
-        if amount < min_dep:
-            bot.send_message(message.chat.id, f"⚠️ Введите число больше {min_dep}")
-            return
-
-        crypto = user_states[user_id]["crypto"]
-        db.create_temp_payment(user_id, amount, crypto)
-
-        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
-        markup.add("✅ Я заплатил")
-        markup.add("🔚 Домой")
-
-        payment_msg = format_payment_message(amount, crypto)
-        bot.send_message(message.chat.id, payment_msg, reply_markup=markup, parse_mode='Markdown')
-
-        user_states[user_id] = {"step": "deposit_confirm", "amount": amount, "crypto": crypto}
-
-    @bot.message_handler(
-        func=lambda message: user_states.get(message.from_user.id, {}).get("step") == "deposit_confirm")
-    def deposit_confirm_handler(message):
-        user_id = message.from_user.id
-        text = message.text.strip()
-
-        if text in ["🔚 Домой", "/start"]:
-            reset_state(user_states, user_id)
-            bot.send_message(message.chat.id, "Главное меню", reply_markup=get_main_menu())
-            return
-
-        if text == "✅ Я заплатил":
-            amount = user_states[user_id].get("amount", 0)
-            crypto = user_states[user_id].get("crypto", "")
-
-            # 💳 ОТПРАВИТЬ ЗАПРОС ПЛАТЕЖА В ПЛАТЕЖНУЮ ГРУППУ
-            markup = types.InlineKeyboardMarkup(row_width=2)
-            markup.add(
-                types.InlineKeyboardButton("✅ Принять", callback_data=f"accept_payment_{user_id}"),
-                types.InlineKeyboardButton("❌ Отклонить", callback_data=f"reject_payment_{user_id}")
-            )
-
-            payment_request = (
-                f"💳 <b>Новый платеж</b>\n\n"
-                f"👤 ID: <code>{user_id}</code>\n"
-                f"💰 Сумма: <b>${amount:.2f}</b>\n"
-                f"🪙 Валюта: {crypto}\n"
-                f"📅 Время: <code>{message.date}</code>"
-            )
-            
-            try:
-                bot.send_message(PAYMENT_GROUP_ID, payment_request, reply_markup=markup, parse_mode='HTML')
-                logger.info(f"Payment request from user {user_id}: {amount}$ {crypto}")
-            except Exception as e:
-                logger.error(f"Error sending payment to group: {e}")
-
-            bot.send_message(user_id, "⏳ Пров��рка...\nВаш счет будет автоматически пополнен в течение 1-3 минут.",
-                             reply_markup=get_main_menu())
-            reset_state(user_states, user_id)
-            return
-
-        reset_state(user_states, user_id)
-        bot.send_message(message.chat.id, "Пополнение отменено.", reply_markup=get_main_menu())
-
-
     # ================== CALLBACK HANDLERS ==================
-    
+
     @bot.callback_query_handler(func=lambda call: call.data == "back_to_main")
     def back_to_main_callback(call):
         user_id = call.from_user.id
         reset_state(user_states, user_id)
-        bot.edit_message_text("Главное меню:", call.message.chat.id, call.message.message_id, reply_markup=get_main_menu())
-
-
-def get_main_menu():
-    """Получить главное меню с кнопками"""
-    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
-    markup.add("👥 Подписчики", "👀 Просмотры")
-    markup.add("❤ Голоса/Реакции", "⚙ Мои заказы")
-    markup.add("💳 Баланс", "❓ Задать вопрос")
-    return markup
+        bot.edit_message_text("Главное меню:", call.message.chat.id, call.message.message_id,
+                              reply_markup=get_main_menu())
