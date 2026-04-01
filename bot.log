@@ -319,3 +319,2488 @@ Traceback (most recent call last):
 telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: inline keyboard expected
 
 2026-03-27 17:22:34,558 - INFO - User 8234178181 viewed balance
+2026-03-28 15:38:27,341 - INFO - Bot initialized successfully
+2026-03-28 15:38:27,823 - INFO - ✅ Commands set successfully
+2026-03-28 15:38:27,824 - INFO - Registering handlers...
+2026-03-28 15:38:27,824 - INFO - ✅ All handlers registered
+2026-03-28 15:38:27,825 - INFO - Registering callbacks...
+2026-03-28 15:38:27,825 - INFO - ✅ All callbacks registered
+2026-03-28 15:38:27,825 - INFO - === BOT STARTED ===
+2026-03-28 15:38:53,648 - INFO - DEBUG: Menu object: <telebot.types.ReplyKeyboardMarkup object at 0x10db24d40>
+2026-03-28 15:38:53,649 - INFO - DEBUG: Menu type: <class 'telebot.types.ReplyKeyboardMarkup'>
+2026-03-28 15:38:54,245 - INFO - ✅ Message sent to 8234178181 with menu
+2026-03-28 15:38:56,300 - INFO - User 8234178181 viewed subscribers menu
+2026-03-28 15:38:58,987 - INFO - User 8234178181 viewed views menu
+2026-03-28 15:39:00,650 - INFO - User 8234178181 viewed reactions menu
+2026-03-28 15:39:05,188 - INFO - User 8234178181 viewed orders menu
+2026-03-28 15:39:08,804 - INFO - User 8234178181 viewed balance
+2026-03-28 15:40:01,067 - INFO - DEBUG: Menu object: <telebot.types.ReplyKeyboardMarkup object at 0x10db24da0>
+2026-03-28 15:40:01,080 - INFO - DEBUG: Menu type: <class 'telebot.types.ReplyKeyboardMarkup'>
+2026-03-28 15:40:01,288 - INFO - ✅ Message sent to 8234178181 with menu
+2026-03-28 15:40:04,136 - INFO - User 8234178181 viewed subscribers menu
+2026-03-28 15:40:08,190 - ERROR - Error sending text question to group: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-03-28 15:40:09,593 - ERROR - Error sending text question to group: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-03-28 15:40:10,850 - ERROR - Error sending text question to group: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-03-28 15:40:13,136 - INFO - User 8234178181 viewed reactions menu
+2026-03-28 15:56:11,750 - INFO - Bot initialized successfully
+2026-03-28 15:56:12,254 - INFO - ✅ Commands set successfully
+2026-03-28 15:56:12,254 - INFO - Registering handlers...
+2026-03-28 15:56:12,255 - INFO - ✅ All handlers registered
+2026-03-28 15:56:12,255 - INFO - Registering callbacks...
+2026-03-28 15:56:12,256 - INFO - ✅ All callbacks registered
+2026-03-28 15:56:12,256 - INFO - === BOT STARTED ===
+2026-03-28 15:56:25,627 - INFO - DEBUG: Menu object: <telebot.types.ReplyKeyboardMarkup object at 0x10533cb90>
+2026-03-28 15:56:25,627 - INFO - DEBUG: Menu type: <class 'telebot.types.ReplyKeyboardMarkup'>
+2026-03-28 15:56:26,247 - INFO - ✅ Message sent to 8234178181 with menu
+2026-03-28 15:56:28,256 - INFO - User 8234178181 viewed balance
+2026-03-28 15:56:41,085 - INFO - Text question from user 8234178181 (@VVebstyle) sent to PAYMENT_GROUP
+2026-03-28 15:57:50,456 - INFO - User 8234178181 viewed views menu
+2026-03-28 15:59:08,629 - INFO - User 8234178181 viewed balance
+2026-03-28 16:10:51,191 - INFO - Bot initialized successfully
+2026-03-28 16:10:51,658 - INFO - ✅ Commands set successfully
+2026-03-28 16:10:51,658 - INFO - Registering handlers...
+2026-03-28 16:10:51,659 - INFO - ✅ All handlers registered
+2026-03-28 16:10:51,659 - INFO - Registering callbacks...
+2026-03-28 16:10:51,660 - INFO - ✅ All callbacks registered
+2026-03-28 16:10:51,660 - INFO - === BOT STARTED ===
+2026-03-28 16:10:55,994 - INFO - User 8234178181 viewed balance
+2026-03-28 16:11:59,727 - INFO - User 8234178181 viewed balance
+2026-03-28 16:12:20,995 - INFO - Text question from user 8234178181 (@VVebstyle) sent to PAYMENT_GROUP
+2026-03-28 16:19:30,693 - INFO - Bot initialized successfully
+2026-03-28 16:19:31,253 - INFO - ✅ Commands set successfully
+2026-03-28 16:19:31,253 - INFO - Registering handlers...
+2026-03-28 16:19:31,254 - INFO - ✅ All handlers registered
+2026-03-28 16:19:31,254 - INFO - Registering callbacks...
+2026-03-28 16:19:31,255 - INFO - ✅ All callbacks registered
+2026-03-28 16:19:31,255 - INFO - === BOT STARTED ===
+2026-03-28 16:19:41,392 - INFO - User 8234178181 viewed balance
+2026-03-28 16:20:06,818 - INFO - ✅ Text question from user 8234178181 (@VVebstyle) sent to PAYMENT_GROUP
+2026-03-28 16:20:31,704 - INFO - User 8234178181 viewed balance
+2026-03-28 16:37:26,993 - INFO - Bot initialized successfully
+2026-03-28 16:37:27,510 - INFO - ✅ Commands set successfully
+2026-03-28 16:37:27,511 - INFO - Registering handlers...
+2026-03-28 16:37:27,512 - INFO - ✅ All handlers registered
+2026-03-28 16:37:27,512 - INFO - Registering callbacks...
+2026-03-28 16:37:27,513 - INFO - ✅ All callbacks registered
+2026-03-28 16:37:27,513 - INFO - === BOT STARTED ===
+2026-03-28 16:37:46,681 - INFO - User 8234178181 viewed balance
+2026-03-28 16:38:39,161 - INFO - ✅ Text question from user 8234178181 (@VVebstyle) sent to PAYMENT_GROUP
+2026-03-28 16:40:18,391 - INFO - Bot initialized successfully
+2026-03-28 16:40:22,018 - INFO - ✅ Commands set successfully
+2026-03-28 16:40:22,019 - INFO - Registering handlers...
+2026-03-28 16:40:22,019 - INFO - ✅ All handlers registered
+2026-03-28 16:40:22,019 - INFO - Registering callbacks...
+2026-03-28 16:40:22,020 - INFO - ✅ All callbacks registered
+2026-03-28 16:40:22,020 - INFO - === BOT STARTED ===
+2026-03-28 16:40:28,542 - INFO - User 8234178181 viewed subscribers menu
+2026-03-28 16:40:30,834 - INFO - User 8234178181 viewed reactions menu
+2026-03-28 16:40:31,814 - INFO - User 8234178181 viewed balance
+2026-03-28 16:40:59,330 - INFO - ✅ START command from user 8234178181
+2026-03-28 16:41:01,045 - INFO - User 8234178181 entered ask_admin mode
+2026-03-28 16:41:08,411 - INFO - ✅ Photo from 8234178181 sent to PAYMENT_GROUP
+2026-03-28 16:41:43,683 - INFO - Bot initialized successfully
+2026-03-28 16:41:44,133 - INFO - ✅ Commands set successfully
+2026-03-28 16:41:44,133 - INFO - Registering handlers...
+2026-03-28 16:41:44,134 - INFO - ✅ All handlers registered
+2026-03-28 16:41:44,134 - INFO - Registering callbacks...
+2026-03-28 16:41:44,135 - INFO - ✅ All callbacks registered
+2026-03-28 16:41:44,135 - INFO - === BOT STARTED ===
+2026-03-28 16:41:54,715 - INFO - User 8234178181 viewed balance
+2026-03-28 16:42:16,678 - INFO - ✅ START command from user 8234178181
+2026-03-28 16:42:18,381 - INFO - User 8234178181 entered ask_admin mode
+2026-03-28 16:42:19,645 - INFO - ✅ Text from 8234178181 sent to PAYMENT_GROUP
+2026-03-28 16:42:39,047 - INFO - User 8234178181 entered ask_admin mode
+2026-03-28 16:42:40,333 - INFO - ✅ Text from 8234178181 sent to PAYMENT_GROUP
+2026-03-28 23:36:58,767 - ERROR - Bot error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 115, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+2026-03-29 12:09:16,366 - INFO - Bot initialized successfully
+2026-03-29 12:09:16,926 - INFO - ✅ Commands set successfully
+2026-03-29 12:09:16,926 - INFO - Registering handlers...
+2026-03-29 12:09:16,927 - INFO - ✅ All handlers registered
+2026-03-29 12:09:16,927 - INFO - Registering callbacks...
+2026-03-29 12:09:16,928 - INFO - ✅ All callbacks registered
+2026-03-29 12:09:16,928 - INFO - === BOT STARTED ===
+2026-03-29 12:09:29,722 - INFO - User 8234178181 viewed balance
+2026-03-29 12:09:46,007 - INFO - User 8234178181 waiting for payment proof for LTC
+2026-03-29 12:09:57,130 - INFO - ✅ Payment photo from user 8234178181 (@VVebstyle) sent to GROUP
+2026-03-29 12:09:58,413 - ERROR - Bot error: name 'reset_state' is not defined
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10456, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Xaru/Desktop/bot.zakaz/callbacks/payment_callbacks.py", line 112, in payment_photo_handler
+    reset_state(user_states, user_id)
+    ^^^^^^^^^^^
+NameError: name 'reset_state' is not defined. Did you mean: 'user_states'?
+2026-03-29 12:26:56,455 - INFO - Bot initialized successfully
+2026-03-29 12:26:56,885 - INFO - ✅ Commands set successfully
+2026-03-29 12:26:56,886 - INFO - Registering handlers...
+2026-03-29 12:26:56,887 - INFO - ✅ All handlers registered
+2026-03-29 12:26:56,887 - INFO - Registering callbacks...
+2026-03-29 12:26:56,888 - INFO - ✅ All callbacks registered
+2026-03-29 12:26:56,888 - INFO - === BOT STARTED ===
+2026-03-29 12:27:07,312 - INFO - User 8234178181 viewed subscribers menu
+2026-03-29 12:27:08,726 - INFO - User 8234178181 viewed views menu
+2026-03-29 12:27:11,220 - INFO - User 8234178181 viewed orders menu
+2026-03-29 12:27:13,099 - INFO - User 8234178181 viewed reactions menu
+2026-03-29 12:27:16,458 - INFO - User 8234178181 viewed balance
+2026-03-29 12:27:24,595 - INFO - User 8234178181 waiting for payment proof for LTC
+2026-03-29 12:27:39,707 - INFO - ✅ Payment photo from user 8234178181 (@VVebstyle) sent to GROUP
+2026-03-29 12:27:41,788 - INFO - User 8234178181 viewed balance
+2026-03-29 18:37:01,898 - ERROR - Bot error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 115, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+2026-03-29 18:37:46,488 - INFO - Bot initialized successfully
+2026-03-29 18:37:46,983 - INFO - ✅ Commands set successfully
+2026-03-29 18:37:46,983 - INFO - Registering handlers...
+2026-03-29 18:37:46,984 - INFO - ✅ All handlers registered
+2026-03-29 18:37:46,984 - INFO - Registering callbacks...
+2026-03-29 18:37:46,985 - INFO - ✅ All callbacks registered
+2026-03-29 18:37:46,985 - INFO - === BOT STARTED ===
+2026-03-29 18:38:57,369 - INFO - User 8234178181 entered ask_admin mode
+2026-03-29 18:39:00,014 - INFO - ✅ Text from 8234178181 sent to PAYMENT_GROUP
+2026-03-29 19:09:59,812 - INFO - User 8234178181 viewed subscribers menu
+2026-03-29 19:10:05,464 - INFO - User 8234178181 viewed views menu
+2026-03-29 19:10:07,731 - INFO - User 8234178181 viewed reactions menu
+2026-03-29 19:10:09,094 - INFO - User 8234178181 viewed orders menu
+2026-03-29 20:59:46,918 - INFO - Bot initialized successfully
+2026-03-29 20:59:50,075 - INFO - ✅ Commands set successfully
+2026-03-29 20:59:50,075 - INFO - Registering handlers...
+2026-03-29 20:59:50,076 - INFO - ✅ All handlers registered
+2026-03-29 20:59:50,076 - INFO - Registering callbacks...
+2026-03-29 20:59:50,076 - INFO - ✅ All callbacks registered
+2026-03-29 20:59:50,076 - INFO - === BOT STARTED ===
+2026-03-29 20:59:52,757 - INFO - User 8234178181 viewed balance
+2026-03-29 21:00:03,446 - INFO - User 8234178181 viewed views menu
+2026-03-29 21:00:29,676 - INFO - User 8234178181 viewed balance
+2026-03-29 21:00:31,875 - INFO - User 8234178181 viewed reactions menu
+2026-03-29 21:00:34,478 - INFO - User 8234178181 viewed subscribers menu
+2026-03-29 21:00:38,416 - INFO - User 8234178181 viewed views menu
+2026-03-29 21:01:27,004 - INFO - User 8234178181 viewed views menu
+2026-03-29 21:04:14,522 - INFO - User 8234178181 viewed balance
+2026-03-29 21:04:38,483 - INFO - User 8234178181 waiting for payment proof for LTC
+2026-03-29 21:05:03,649 - INFO - ✅ Payment photo from user 8234178181 (@VVebstyle) sent to GROUP
+2026-03-29 21:13:09,782 - INFO - User 8234178181 viewed balance
+2026-03-29 21:13:20,374 - INFO - User 8234178181 waiting for payment proof for LTC
+2026-03-29 21:13:25,983 - INFO - ✅ Payment photo from user 8234178181 (@VVebstyle) sent to GROUP
+2026-03-29 21:24:30,118 - INFO - Bot initialized successfully
+2026-03-29 21:24:31,328 - INFO - ✅ Commands set successfully
+2026-03-29 21:24:31,328 - INFO - Registering handlers...
+2026-03-29 21:24:31,329 - INFO - ✅ All handlers registered
+2026-03-29 21:24:31,330 - INFO - Registering callbacks...
+2026-03-29 21:24:31,330 - INFO - ✅ All callbacks registered
+2026-03-29 21:24:31,330 - INFO - === BOT STARTED ===
+2026-03-29 21:25:22,622 - INFO - User 8234178181 viewed balance
+2026-03-29 21:25:40,602 - INFO - User 8234178181 waiting for payment proof for LTC
+2026-03-29 21:25:46,949 - ERROR - ❌ Error sending payment photo: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-03-29 21:26:45,737 - INFO - Bot initialized successfully
+2026-03-29 21:26:47,667 - INFO - ✅ Commands set successfully
+2026-03-29 21:26:47,668 - INFO - Registering handlers...
+2026-03-29 21:26:47,669 - INFO - ✅ All handlers registered
+2026-03-29 21:26:47,669 - INFO - Registering callbacks...
+2026-03-29 21:26:47,669 - INFO - ✅ All callbacks registered
+2026-03-29 21:26:47,670 - INFO - === BOT STARTED ===
+2026-03-29 21:26:56,288 - INFO - User 8234178181 viewed balance
+2026-03-29 21:27:05,201 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2026-03-29 21:27:05,203 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10456, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Xaru/Desktop/bot.zakaz/callbacks/payment_callbacks.py", line 57, in select_crypto
+    bot.edit_message_text(message_text, call.message.chat.id, call.message.message_id,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 5473, in edit_message_text
+    result = apihelper.edit_message_text(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 1678, in edit_message_text
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+
+2026-03-29 21:27:10,431 - INFO - User 8234178181 waiting for payment proof for USDT
+2026-03-29 21:27:23,539 - ERROR - ❌ Error sending payment photo: A request to the Telegram API was unsuccessful. Error code: 403. Description: Forbidden: bots can't send messages to bots
+2026-03-29 21:30:06,908 - INFO - Bot initialized successfully
+2026-03-29 21:30:07,860 - INFO - ✅ Commands set successfully
+2026-03-29 21:30:07,861 - INFO - Registering handlers...
+2026-03-29 21:30:07,861 - INFO - ✅ All handlers registered
+2026-03-29 21:30:07,861 - INFO - Registering callbacks...
+2026-03-29 21:30:07,862 - INFO - ✅ All callbacks registered
+2026-03-29 21:30:07,862 - INFO - === BOT STARTED ===
+2026-03-29 21:30:45,184 - INFO - User 8234178181 viewed balance
+2026-03-29 21:31:18,247 - INFO - User 8234178181 waiting for payment proof for LTC
+2026-03-29 21:31:27,384 - INFO - ✅ Payment photo from user 8234178181 (@VVebstyle) sent to GROUP
+2026-03-29 21:45:35,066 - ERROR - Bot error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 115, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+2026-03-29 21:51:22,083 - INFO - Bot initialized successfully
+2026-03-29 21:51:24,219 - INFO - ✅ Commands set successfully
+2026-03-29 21:51:24,220 - INFO - Registering handlers...
+2026-03-29 21:51:24,220 - INFO - ✅ All handlers registered
+2026-03-29 21:51:24,220 - INFO - Registering callbacks...
+2026-03-29 21:51:24,220 - INFO - ✅ All callbacks registered
+2026-03-29 21:51:24,221 - INFO - === BOT STARTED ===
+2026-03-29 21:51:29,138 - INFO - User 8234178181 viewed balance
+2026-03-29 21:51:36,055 - INFO - ✅ START command from user 7501202985
+2026-03-29 21:51:38,399 - INFO - User 7501202985 viewed balance
+2026-03-29 21:51:47,922 - INFO - User 7501202985 waiting for payment proof for ETH
+2026-03-29 21:51:57,268 - INFO - ✅ Payment photo from user 7501202985 (@mannapov_ulugbek) sent to GROUP
+2026-03-29 22:06:38,114 - ERROR - Bot error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 115, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+2026-03-29 23:45:03,997 - INFO - Bot initialized successfully
+2026-03-29 23:45:04,492 - INFO - ✅ Commands set successfully
+2026-03-29 23:45:04,492 - INFO - Registering handlers...
+2026-03-29 23:45:04,493 - INFO - ✅ All handlers registered
+2026-03-29 23:45:04,493 - INFO - Registering callbacks...
+2026-03-29 23:45:04,494 - INFO - ✅ All callbacks registered
+2026-03-29 23:45:04,494 - INFO - === BOT STARTED ===
+2026-03-29 23:45:12,376 - INFO - User 8234178181 viewed subscribers menu
+2026-03-29 23:45:15,239 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-29 23:46:09,902 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 59
+2026-03-29 23:46:09,904 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10456, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Xaru/Desktop/bot.zakaz/handlers/admin_handlers.py", line 96, in stat_top_users
+    bot.edit_message_text(text, call.message.chat.id, call.message.message_id,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 5473, in edit_message_text
+    result = apihelper.edit_message_text(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 1678, in edit_message_text
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 59
+
+2026-03-29 23:46:25,717 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-29 23:48:03,702 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-29 23:48:32,995 - INFO - User 7501202985 viewed subscribers menu
+2026-03-29 23:50:35,718 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-29 23:53:27,422 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-29 23:54:56,322 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-30 00:07:21,312 - INFO - Bot initialized successfully
+2026-03-30 00:07:21,785 - INFO - ✅ Commands set successfully
+2026-03-30 00:07:21,785 - INFO - Registering handlers...
+2026-03-30 00:07:21,786 - INFO - ✅ All handlers registered
+2026-03-30 00:07:21,787 - INFO - Registering callbacks...
+2026-03-30 00:07:21,787 - INFO - ✅ All callbacks registered
+2026-03-30 00:07:21,787 - INFO - === BOT STARTED ===
+2026-03-30 00:07:46,079 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-30 00:18:18,627 - ERROR - Bot error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10456, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Xaru/Desktop/bot.zakaz/callbacks/admin_callbacks.py", line 96, in admin_manualpay
+    bot.answer_callback_query(call.id)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 6580, in answer_callback_query
+    return apihelper.answer_callback_query(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 2047, in answer_callback_query
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+2026-03-30 00:18:46,588 - INFO - Bot initialized successfully
+2026-03-30 00:18:47,198 - INFO - ✅ Commands set successfully
+2026-03-30 00:18:47,199 - INFO - Registering handlers...
+2026-03-30 00:18:47,199 - INFO - ✅ All handlers registered
+2026-03-30 00:18:47,200 - INFO - Registering callbacks...
+2026-03-30 00:18:47,200 - INFO - ✅ All callbacks registered
+2026-03-30 00:18:47,200 - INFO - === BOT STARTED ===
+2026-03-30 00:18:48,485 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-30 00:20:33,353 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-30 00:20:40,072 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-30 00:20:46,753 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-30 00:43:46,778 - INFO - Bot initialized successfully
+2026-03-30 00:43:47,421 - INFO - ✅ Commands set successfully
+2026-03-30 00:43:47,421 - INFO - Registering handlers...
+2026-03-30 00:43:47,422 - INFO - ✅ All handlers registered
+2026-03-30 00:43:47,422 - INFO - Registering callbacks...
+2026-03-30 00:43:47,423 - INFO - ✅ All callbacks registered
+2026-03-30 00:43:47,423 - INFO - === BOT STARTED ===
+2026-03-30 00:44:06,618 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 00:44:10,338 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-30 00:45:28,290 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-30 00:45:52,249 - INFO - Bot initialized successfully
+2026-03-30 00:45:52,688 - INFO - ✅ Commands set successfully
+2026-03-30 00:45:52,689 - INFO - Registering handlers...
+2026-03-30 00:45:52,690 - INFO - ✅ All handlers registered
+2026-03-30 00:45:52,690 - INFO - Registering callbacks...
+2026-03-30 00:45:52,690 - INFO - ✅ All callbacks registered
+2026-03-30 00:45:52,691 - INFO - === BOT STARTED ===
+2026-03-30 00:45:58,636 - INFO - ✅ START command from user 8234178181
+2026-03-30 00:46:03,041 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-30 00:46:35,998 - INFO - ✅ START command from user 8234178181
+2026-03-30 00:46:38,576 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-30 00:48:44,454 - INFO - Bot initialized successfully
+2026-03-30 00:48:44,917 - INFO - ✅ Commands set successfully
+2026-03-30 00:48:44,917 - INFO - Registering handlers...
+2026-03-30 00:48:44,918 - INFO - ✅ All handlers registered
+2026-03-30 00:48:44,918 - INFO - Registering callbacks...
+2026-03-30 00:48:44,919 - INFO - ✅ All callbacks registered
+2026-03-30 00:48:44,919 - INFO - === BOT STARTED ===
+2026-03-30 00:48:48,308 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-30 00:52:58,044 - INFO - Bot initialized successfully
+2026-03-30 00:52:58,497 - INFO - ✅ Commands set successfully
+2026-03-30 00:52:58,498 - INFO - Registering handlers...
+2026-03-30 00:52:58,498 - INFO - ✅ All handlers registered
+2026-03-30 00:52:58,499 - INFO - Registering callbacks...
+2026-03-30 00:52:58,499 - INFO - ✅ All callbacks registered
+2026-03-30 00:52:58,499 - INFO - === BOT STARTED ===
+2026-03-30 00:53:05,751 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-30 00:55:52,922 - INFO - Bot initialized successfully
+2026-03-30 00:55:53,559 - INFO - ✅ Commands set successfully
+2026-03-30 00:55:53,559 - INFO - Registering handlers...
+2026-03-30 00:55:53,560 - INFO - ✅ All handlers registered
+2026-03-30 00:55:53,560 - INFO - Registering callbacks...
+2026-03-30 00:55:53,560 - INFO - ✅ All callbacks registered
+2026-03-30 00:55:53,561 - INFO - === BOT STARTED ===
+2026-03-30 00:56:29,635 - INFO - ✅ START command from user 8234178181
+2026-03-30 00:56:34,183 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-30 13:59:08,498 - ERROR - Bot error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 115, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+2026-03-30 14:07:03,704 - INFO - Bot initialized successfully
+2026-03-30 14:07:04,742 - INFO - ✅ Commands set successfully
+2026-03-30 14:07:04,743 - INFO - Registering handlers...
+2026-03-30 14:07:04,744 - INFO - ✅ All handlers registered
+2026-03-30 14:07:04,744 - INFO - Registering callbacks...
+2026-03-30 14:07:04,744 - INFO - ✅ All callbacks registered
+2026-03-30 14:07:04,745 - INFO - === BOT STARTED ===
+2026-03-30 14:07:05,901 - INFO - ✅ ADMIN command from user 8234178181
+2026-03-30 14:07:05,937 - INFO - ✅ START command from user 8234178181
+2026-03-30 14:07:06,144 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 14:12:09,956 - INFO - Bot initialized successfully
+2026-03-30 14:12:11,696 - INFO - ✅ Commands set successfully
+2026-03-30 14:12:11,696 - INFO - Registering handlers...
+2026-03-30 14:12:11,696 - INFO - ✅ All handlers registered
+2026-03-30 14:12:11,696 - INFO - Registering callbacks...
+2026-03-30 14:12:11,697 - INFO - ✅ All callbacks registered
+2026-03-30 14:12:11,697 - INFO - === BOT STARTED ===
+2026-03-30 14:12:17,027 - ERROR - Bot error: cannot import name 'get_admin_menu' from 'callbacks.admin_callbacks' (/Users/Xaru/Desktop/bot.zakaz/callbacks/admin_callbacks.py)
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10456, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Xaru/Desktop/bot.zakaz/handlers/user_handlers.py", line 35, in admin_start
+    from callbacks.admin_callbacks import get_admin_menu
+ImportError: cannot import name 'get_admin_menu' from 'callbacks.admin_callbacks' (/Users/Xaru/Desktop/bot.zakaz/callbacks/admin_callbacks.py)
+2026-03-30 14:12:28,981 - INFO - Bot initialized successfully
+2026-03-30 14:12:29,424 - INFO - ✅ Commands set successfully
+2026-03-30 14:12:29,425 - INFO - Registering handlers...
+2026-03-30 14:12:29,425 - INFO - ✅ All handlers registered
+2026-03-30 14:12:29,425 - INFO - Registering callbacks...
+2026-03-30 14:12:29,426 - INFO - ✅ All callbacks registered
+2026-03-30 14:12:29,426 - INFO - === BOT STARTED ===
+2026-03-30 14:12:33,182 - ERROR - Bot error: cannot import name 'get_admin_menu' from 'callbacks.admin_callbacks' (/Users/Xaru/Desktop/bot.zakaz/callbacks/admin_callbacks.py)
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10456, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Xaru/Desktop/bot.zakaz/handlers/user_handlers.py", line 35, in admin_start
+    from callbacks.admin_callbacks import get_admin_menu
+ImportError: cannot import name 'get_admin_menu' from 'callbacks.admin_callbacks' (/Users/Xaru/Desktop/bot.zakaz/callbacks/admin_callbacks.py)
+2026-03-30 14:26:44,722 - INFO - Bot initialized successfully
+2026-03-30 14:26:47,011 - INFO - ✅ Commands set successfully
+2026-03-30 14:26:47,011 - INFO - Registering handlers...
+2026-03-30 14:26:47,012 - INFO - ✅ All handlers registered
+2026-03-30 14:26:47,012 - INFO - Registering callbacks...
+2026-03-30 14:26:47,012 - INFO - ✅ All callbacks registered
+2026-03-30 14:26:47,013 - INFO - === BOT STARTED ===
+2026-03-30 14:26:50,547 - ERROR - Bot error: name 'get_admin_menu' is not defined
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10456, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Xaru/Desktop/bot.zakaz/handlers/user_handlers.py", line 35, in admin_start
+    bot.send_message(message.chat.id, "🔐 Admin paneli", reply_markup=get_admin_menu())
+                                                                      ^^^^^^^^^^^^^^
+NameError: name 'get_admin_menu' is not defined. Did you mean: 'get_main_menu'?
+2026-03-30 15:35:42,369 - INFO - Bot initialized successfully
+2026-03-30 15:35:42,867 - INFO - ✅ Commands set successfully
+2026-03-30 15:35:42,868 - INFO - Registering handlers...
+2026-03-30 15:35:42,869 - INFO - ✅ All handlers registered
+2026-03-30 15:35:42,869 - INFO - Registering callbacks...
+2026-03-30 15:35:42,869 - INFO - ✅ All callbacks registered
+2026-03-30 15:35:42,870 - INFO - === BOT STARTED ===
+2026-03-30 15:36:12,571 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 59
+2026-03-30 15:36:12,573 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10456, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Xaru/Desktop/bot.zakaz/callbacks/admin_callbacks.py", line 67, in stat_top_users
+    bot.edit_message_text(text, call.message.chat.id, call.message.message_id,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 5473, in edit_message_text
+    result = apihelper.edit_message_text(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 1678, in edit_message_text
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 59
+
+2026-03-30 15:50:17,422 - INFO - Bot initialized successfully
+2026-03-30 15:50:17,969 - INFO - ✅ Commands set successfully
+2026-03-30 15:50:17,970 - INFO - Registering handlers...
+2026-03-30 15:50:17,970 - INFO - ✅ All handlers registered
+2026-03-30 15:50:17,971 - INFO - Registering callbacks...
+2026-03-30 15:50:17,971 - INFO - ✅ All callbacks registered
+2026-03-30 15:50:17,971 - INFO - === BOT STARTED ===
+2026-03-30 15:50:28,904 - INFO - Admin 8234178181 returned to main panel
+2026-03-30 15:50:31,603 - INFO - Admin 8234178181 returned to main panel
+2026-03-30 15:50:33,755 - INFO - Admin 8234178181 returned to main panel
+2026-03-30 15:50:59,701 - INFO - Admin 8234178181 returned to main panel
+2026-03-30 15:51:07,493 - INFO - ✅ START command from user 8234178181
+2026-03-30 15:51:47,431 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 16:00:03,302 - INFO - back_to_main clicked by 8234178181
+2026-03-30 16:00:25,009 - ERROR - Bot error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10456, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Xaru/Desktop/bot.zakaz/handlers/admin_handlers.py", line 29, in admin_panel
+    bot.send_message(message.chat.id, "⚙️ **АДМИН-ПАНЕЛЬ**", reply_markup=markup, parse_mode='Markdown')
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1834, in send_message
+    apihelper.send_message(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 282, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+2026-03-30 16:07:00,026 - INFO - Bot initialized successfully
+2026-03-30 16:07:02,716 - INFO - ✅ Commands set successfully
+2026-03-30 16:07:02,717 - INFO - Registering handlers...
+2026-03-30 16:07:02,718 - INFO - ✅ All handlers registered
+2026-03-30 16:07:02,718 - INFO - Registering callbacks...
+2026-03-30 16:07:02,719 - INFO - ✅ All callbacks registered
+2026-03-30 16:07:02,719 - INFO - === BOT STARTED ===
+2026-03-30 16:07:06,404 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 16:07:09,400 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 16:07:24,190 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:07:26,162 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:07:43,869 - INFO - ✅ Order #1 created by user 7501202985
+2026-03-30 16:07:44,028 - INFO - ✅ Order #1 notification sent to admin
+2026-03-30 16:07:49,058 - INFO - back_to_main clicked by 7501202985
+2026-03-30 16:07:49,303 - INFO - Main menu sent to 7501202985
+2026-03-30 16:18:29,034 - INFO - Bot initialized successfully
+2026-03-30 16:18:29,683 - INFO - ✅ Commands set successfully
+2026-03-30 16:18:29,684 - INFO - Registering handlers...
+2026-03-30 16:18:29,685 - INFO - ✅ All handlers registered
+2026-03-30 16:18:29,685 - INFO - Registering callbacks...
+2026-03-30 16:18:29,685 - INFO - ✅ All callbacks registered
+2026-03-30 16:18:29,686 - INFO - === BOT STARTED ===
+2026-03-30 16:18:39,750 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:18:42,018 - INFO - User 7501202985 viewed their orders (1 orders)
+2026-03-30 16:18:44,004 - INFO - back_to_main clicked by 7501202985
+2026-03-30 16:18:44,362 - INFO - Main menu sent to 7501202985
+2026-03-30 16:18:47,558 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:18:49,311 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:19:09,126 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:19:10,811 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:19:22,277 - ERROR - Bot error: name 'order_id' is not defined
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Users/Xaru/Desktop/bot.zakaz/handlers/subs_handlers.py", line 181, in process_subs_quantity
+    types.InlineKeyboardButton("✅ Выполнено", callback_data=f"admin_complete_order_{order_id}"),
+                                                                                     ^^^^^^^^
+NameError: name 'order_id' is not defined. Did you mean: 'user_id'?
+2026-03-30 16:20:16,521 - INFO - Bot initialized successfully
+2026-03-30 16:20:17,295 - INFO - ✅ Commands set successfully
+2026-03-30 16:20:17,296 - INFO - Registering handlers...
+2026-03-30 16:20:17,296 - INFO - ✅ All handlers registered
+2026-03-30 16:20:17,296 - INFO - Registering callbacks...
+2026-03-30 16:20:17,297 - INFO - ✅ All callbacks registered
+2026-03-30 16:20:17,297 - INFO - === BOT STARTED ===
+2026-03-30 16:20:18,618 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:20:38,180 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:20:52,616 - ERROR - Bot error: name 'order_id' is not defined
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Users/Xaru/Desktop/bot.zakaz/handlers/subs_handlers.py", line 181, in process_subs_quantity
+    types.InlineKeyboardButton("✅ Выполнено", callback_data=f"admin_complete_order_{order_id}"),
+                                                                                     ^^^^^^^^
+NameError: name 'order_id' is not defined. Did you mean: 'user_id'?
+2026-03-30 16:23:24,490 - INFO - Bot initialized successfully
+2026-03-30 16:23:24,991 - INFO - ✅ Commands set successfully
+2026-03-30 16:23:24,992 - INFO - Registering handlers...
+2026-03-30 16:23:24,993 - INFO - ✅ All handlers registered
+2026-03-30 16:23:24,994 - INFO - Registering callbacks...
+2026-03-30 16:23:24,994 - INFO - ✅ All callbacks registered
+2026-03-30 16:23:24,995 - INFO - === BOT STARTED ===
+2026-03-30 16:23:47,221 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:23:49,490 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:23:53,072 - INFO - User 7501202985 viewed their orders (1 orders)
+2026-03-30 16:23:56,799 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:24:09,137 - ERROR - Bot error: name 'order_id' is not defined
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Users/Xaru/Desktop/bot.zakaz/handlers/subs_handlers.py", line 220, in process_subs_quantity
+    types.InlineKeyboardButton("✅ Выполнено", callback_data=f"admin_complete_order_{order_id}"),
+                                                                                     ^^^^^^^^
+NameError: name 'order_id' is not defined. Did you mean: 'user_id'?
+2026-03-30 16:28:04,455 - INFO - Bot initialized successfully
+2026-03-30 16:28:05,989 - INFO - ✅ Commands set successfully
+2026-03-30 16:28:05,990 - INFO - Registering handlers...
+2026-03-30 16:28:05,991 - INFO - ✅ All handlers registered
+2026-03-30 16:28:05,991 - INFO - Registering callbacks...
+2026-03-30 16:28:05,991 - INFO - ✅ All callbacks registered
+2026-03-30 16:28:05,991 - INFO - === BOT STARTED ===
+2026-03-30 16:28:48,391 - INFO - ✅ Order #2 created by user 7501202985
+2026-03-30 16:28:48,560 - INFO - ✅ Order #2 notification sent to admin
+2026-03-30 16:36:01,689 - INFO - Bot initialized successfully
+2026-03-30 16:36:02,198 - INFO - ✅ Commands set successfully
+2026-03-30 16:36:02,198 - INFO - Registering handlers...
+2026-03-30 16:36:02,199 - INFO - ✅ All handlers registered
+2026-03-30 16:36:02,199 - INFO - Registering callbacks...
+2026-03-30 16:36:02,200 - INFO - ✅ All callbacks registered
+2026-03-30 16:36:02,200 - INFO - === BOT STARTED ===
+2026-03-30 16:36:06,204 - INFO - ✅ Admin completed order #1
+2026-03-30 16:36:14,442 - INFO - User 7501202985 viewed their orders (2 orders)
+2026-03-30 16:36:17,896 - INFO - back_to_main clicked by 7501202985
+2026-03-30 16:36:18,360 - INFO - Main menu sent to 7501202985
+2026-03-30 16:36:20,038 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:36:50,664 - INFO - User 7501202985 viewed their orders (2 orders)
+2026-03-30 16:36:52,430 - INFO - back_to_main clicked by 7501202985
+2026-03-30 16:36:52,683 - INFO - Main menu sent to 7501202985
+2026-03-30 16:36:55,062 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:36:58,288 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:37:20,816 - INFO - ✅ Order #3 created by user 7501202985
+2026-03-30 16:37:20,963 - INFO - ✅ Order #3 notification sent to admin
+2026-03-30 16:37:32,555 - INFO - ✅ Admin completed order #3
+2026-03-30 16:37:42,060 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:37:43,295 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:37:59,960 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:38:06,736 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:38:27,673 - INFO - ✅ Order #4 created by user 7501202985
+2026-03-30 16:38:27,819 - INFO - ✅ Order #4 notification sent to admin
+2026-03-30 16:39:17,288 - ERROR - Bot error: 'Database' object has no attribute 'get_order_user_and_price'
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10456, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Xaru/Desktop/bot.zakaz/callbacks/admin_callbacks.py", line 524, in admin_reject_order
+    order_info = db.get_order_user_and_price(order_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Database' object has no attribute 'get_order_user_and_price'
+2026-03-30 16:42:14,741 - INFO - Bot initialized successfully
+2026-03-30 16:42:15,255 - INFO - ✅ Commands set successfully
+2026-03-30 16:42:15,256 - INFO - Registering handlers...
+2026-03-30 16:42:15,257 - INFO - ✅ All handlers registered
+2026-03-30 16:42:15,257 - INFO - Registering callbacks...
+2026-03-30 16:42:15,257 - INFO - ✅ All callbacks registered
+2026-03-30 16:42:15,258 - INFO - === BOT STARTED ===
+2026-03-30 16:42:20,049 - ERROR - Bot error: 'Database' object has no attribute 'get_order_user_and_price'
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10456, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Xaru/Desktop/bot.zakaz/callbacks/admin_callbacks.py", line 534, in admin_reject_order
+    order_info = db.get_order_user_and_price(order_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Database' object has no attribute 'get_order_user_and_price'
+2026-03-30 16:44:26,771 - INFO - Bot initialized successfully
+2026-03-30 16:44:27,273 - INFO - ✅ Commands set successfully
+2026-03-30 16:44:27,273 - INFO - Registering handlers...
+2026-03-30 16:44:27,274 - INFO - ✅ All handlers registered
+2026-03-30 16:44:27,274 - INFO - Registering callbacks...
+2026-03-30 16:44:27,276 - INFO - ✅ All callbacks registered
+2026-03-30 16:44:27,277 - INFO - === BOT STARTED ===
+2026-03-30 16:44:30,100 - INFO - ❌ Admin rejected order #4, returned $500.00 to user 7501202985
+2026-03-30 16:44:53,396 - INFO - User 7501202985 viewed subscribers menu
+2026-03-30 16:44:55,588 - INFO - User 7501202985 viewed views menu
+2026-03-30 16:44:57,915 - INFO - User 7501202985 viewed reactions menu
+2026-03-30 16:44:59,813 - INFO - User 7501202985 viewed orders menu
+2026-03-30 16:45:08,602 - INFO - User 7501202985 viewed reactions menu
+2026-03-30 16:45:12,238 - INFO - User 7501202985 viewed orders menu
+2026-03-30 16:45:15,030 - INFO - User 7501202985 viewed balance
+2026-03-30 16:45:26,768 - INFO - User 7501202985 entered ask_admin mode
+2026-03-30 16:45:37,305 - INFO - ✅ Photo from 7501202985 sent to PAYMENT_GROUP
+2026-03-30 16:46:11,613 - INFO - User 7501202985 viewed reactions menu
+2026-03-30 16:46:48,089 - INFO - User 7501202985 viewed orders menu
+2026-03-30 16:46:55,633 - INFO - User 7501202985 viewed views menu
+2026-03-30 16:47:03,108 - INFO - User 7501202985 viewed balance
+2026-03-30 16:48:09,628 - INFO - User 7501202985 viewed views menu
+2026-03-30 16:57:17,221 - INFO - Bot initialized successfully
+2026-03-30 16:57:17,683 - INFO - ✅ Commands set successfully
+2026-03-30 16:57:17,684 - INFO - Registering handlers...
+2026-03-30 16:57:17,685 - ERROR - ❌ Failed to register handlers: name 'register_orders_handlers' is not defined
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 64, in <module>
+    register_all_handlers(bot, user_states)
+  File "/Users/Xaru/Desktop/bot.zakaz/handlers/__init__.py", line 15, in register_all_handlers
+    register_orders_handlers(bot, user_states)
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'register_orders_handlers' is not defined. Did you mean: 'register_user_handlers'?
+2026-03-30 16:57:17,688 - INFO - Registering callbacks...
+2026-03-30 16:57:17,688 - INFO - ✅ All callbacks registered
+2026-03-30 16:57:17,688 - INFO - === BOT STARTED ===
+2026-03-30 16:57:25,541 - INFO - User 7501202985 viewed orders menu
+2026-03-30 16:57:39,802 - INFO - back_to_main clicked by 7501202985
+2026-03-30 16:57:40,404 - INFO - Main menu sent to 7501202985
+2026-03-30 16:57:42,301 - INFO - User 7501202985 viewed views menu
+2026-03-30 16:57:43,881 - INFO - User 7501202985 viewed orders menu
+2026-03-30 16:59:08,708 - INFO - ✅ START command from user 8234178181
+2026-03-30 16:59:11,516 - INFO - User 8234178181 viewed orders menu
+2026-03-30 16:59:19,977 - INFO - back_to_main clicked by 8234178181
+2026-03-30 16:59:20,229 - INFO - Main menu sent to 8234178181
+2026-03-30 17:02:52,142 - INFO - Bot initialized successfully
+2026-03-30 17:02:52,620 - INFO - ✅ Commands set successfully
+2026-03-30 17:02:52,621 - INFO - Registering handlers...
+2026-03-30 17:02:52,621 - INFO - ✅ All handlers registered
+2026-03-30 17:02:52,622 - INFO - Registering callbacks...
+2026-03-30 17:02:52,622 - INFO - ✅ All callbacks registered
+2026-03-30 17:02:52,622 - INFO - === BOT STARTED ===
+2026-03-30 17:02:56,925 - INFO - User 8234178181 viewed orders menu
+2026-03-30 17:03:00,819 - INFO - User 8234178181 opened orders menu
+2026-03-30 17:03:38,270 - INFO - User 7501202985 viewed orders menu
+2026-03-30 17:03:40,931 - INFO - User 7501202985 opened orders menu
+2026-03-30 17:03:43,465 - INFO - User 7501202985 viewed subscribers orders page 1
+2026-03-30 17:04:14,827 - INFO - ❓ Question from user 7501202985 about order #3 sent to admin
+2026-03-30 17:09:49,062 - INFO - Bot initialized successfully
+2026-03-30 17:09:49,515 - INFO - ✅ Commands set successfully
+2026-03-30 17:09:49,515 - INFO - Registering handlers...
+2026-03-30 17:09:49,516 - INFO - ✅ All handlers registered
+2026-03-30 17:09:49,516 - INFO - Registering callbacks...
+2026-03-30 17:09:49,517 - INFO - ✅ All callbacks registered
+2026-03-30 17:09:49,517 - INFO - === BOT STARTED ===
+2026-03-30 17:09:57,754 - INFO - ✅ Reply from admin 8234178181 sent to user 7501202985
+2026-03-30 17:13:35,182 - INFO - User 8234178181 viewed orders menu
+2026-03-30 17:13:37,298 - INFO - User 8234178181 opened orders menu
+2026-03-30 17:14:17,100 - INFO - User 8234178181 viewed orders menu
+2026-03-30 17:14:19,743 - INFO - User 8234178181 opened orders menu
+2026-03-30 17:19:36,022 - INFO - Bot initialized successfully
+2026-03-30 17:19:37,194 - INFO - ✅ Commands set successfully
+2026-03-30 17:19:37,194 - INFO - Registering handlers...
+2026-03-30 17:19:37,195 - INFO - ✅ All handlers registered
+2026-03-30 17:19:37,195 - INFO - Registering callbacks...
+2026-03-30 17:19:37,196 - INFO - ✅ All callbacks registered
+2026-03-30 17:19:37,196 - INFO - === BOT STARTED ===
+2026-03-30 17:19:53,069 - INFO - User 7501202985 viewed views menu
+2026-03-30 17:20:11,914 - INFO - back_to_main clicked by 7501202985
+2026-03-30 17:20:12,195 - INFO - Main menu sent to 7501202985
+2026-03-30 17:20:14,549 - INFO - User 7501202985 viewed orders menu
+2026-03-30 17:20:16,961 - INFO - User 7501202985 viewed views menu
+2026-03-30 17:22:09,652 - INFO - Bot initialized successfully
+2026-03-30 17:22:10,702 - INFO - ✅ Commands set successfully
+2026-03-30 17:22:10,705 - INFO - Registering handlers...
+2026-03-30 17:22:10,708 - INFO - ✅ All handlers registered
+2026-03-30 17:22:10,710 - INFO - Registering callbacks...
+2026-03-30 17:22:10,712 - INFO - ✅ All callbacks registered
+2026-03-30 17:22:10,713 - INFO - === BOT STARTED ===
+2026-03-30 17:22:13,372 - INFO - User 7501202985 viewed orders menu
+2026-03-30 17:22:16,175 - INFO - User 7501202985 viewed views menu
+2026-03-30 17:22:47,291 - INFO - Bot initialized successfully
+2026-03-30 17:22:49,324 - INFO - ✅ Commands set successfully
+2026-03-30 17:22:49,325 - INFO - Registering handlers...
+2026-03-30 17:22:49,326 - INFO - ✅ All handlers registered
+2026-03-30 17:22:49,326 - INFO - Registering callbacks...
+2026-03-30 17:22:49,326 - INFO - ✅ All callbacks registered
+2026-03-30 17:22:49,327 - INFO - === BOT STARTED ===
+2026-03-30 17:22:52,564 - INFO - User 7501202985 viewed orders menu
+2026-03-30 17:22:54,639 - INFO - User 7501202985 viewed views menu
+2026-03-30 17:22:58,272 - INFO - User 7501202985 opened orders menu
+2026-03-30 17:24:56,971 - INFO - Bot initialized successfully
+2026-03-30 17:24:57,427 - INFO - ✅ Commands set successfully
+2026-03-30 17:24:57,428 - INFO - Registering handlers...
+2026-03-30 17:24:57,428 - INFO - ✅ All handlers registered
+2026-03-30 17:24:57,429 - INFO - Registering callbacks...
+2026-03-30 17:24:57,429 - INFO - ✅ All callbacks registered
+2026-03-30 17:24:57,430 - INFO - === BOT STARTED ===
+2026-03-30 17:25:04,709 - INFO - User 7501202985 viewed views menu
+2026-03-30 17:25:14,603 - INFO - User 7501202985 opened auto_views menu
+2026-03-30 17:25:22,157 - INFO - back_to_main clicked by 7501202985
+2026-03-30 17:25:23,247 - INFO - Main menu sent to 7501202985
+2026-03-30 17:25:24,921 - INFO - User 7501202985 viewed views menu
+2026-03-30 17:25:50,910 - INFO - User 7501202985 opened auto_views menu
+2026-03-30 17:26:57,948 - INFO - User 7501202985 opened auto_views menu
+2026-03-30 17:27:24,088 - INFO - back_to_main clicked by 7501202985
+2026-03-30 17:27:24,435 - INFO - Main menu sent to 7501202985
+2026-03-30 17:27:25,875 - INFO - User 7501202985 viewed views menu
+2026-03-30 18:04:26,238 - INFO - Bot initialized successfully
+2026-03-30 18:04:26,810 - INFO - ✅ Commands set successfully
+2026-03-30 18:04:26,810 - INFO - Registering handlers...
+2026-03-30 18:04:26,811 - INFO - ✅ All handlers registered
+2026-03-30 18:04:26,812 - INFO - Registering callbacks...
+2026-03-30 18:04:26,812 - INFO - ✅ All callbacks registered
+2026-03-30 18:04:26,813 - INFO - === BOT STARTED ===
+2026-03-30 18:04:28,497 - INFO - User 8234178181 viewed views menu
+2026-03-30 18:04:39,240 - INFO - User 8234178181 viewed views menu
+2026-03-30 18:04:46,429 - INFO - User 8234178181 opened auto_views menu
+2026-03-30 18:05:13,653 - INFO - User 7501202985 viewed views menu
+2026-03-30 18:05:16,489 - INFO - User 7501202985 opened auto_views menu
+2026-03-30 18:05:51,000 - ERROR - Bot error: name 'call' is not defined
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Users/Xaru/Desktop/bot.zakaz/handlers/auto_views_handlers.py", line 230, in process_hours_setup
+    show_auto_views_settings_menu(call, bot, user_states, user_id, message.chat.id)
+                                  ^^^^
+NameError: name 'call' is not defined. Did you mean: 'all'?
+2026-03-30 18:17:28,875 - INFO - Bot initialized successfully
+2026-03-30 18:17:30,705 - INFO - ✅ Commands set successfully
+2026-03-30 18:17:30,705 - INFO - Registering handlers...
+2026-03-30 18:17:30,706 - INFO - ✅ All handlers registered
+2026-03-30 18:17:30,706 - INFO - Registering callbacks...
+2026-03-30 18:17:30,707 - INFO - ✅ All callbacks registered
+2026-03-30 18:17:30,707 - INFO - === BOT STARTED ===
+2026-03-30 18:17:36,719 - INFO - User 8234178181 viewed views menu
+2026-03-30 18:17:39,454 - INFO - User 8234178181 opened views menu
+2026-03-30 18:18:15,008 - INFO - User 8234178181 viewed views menu
+2026-03-30 18:18:17,278 - INFO - User 8234178181 opened views menu
+2026-03-30 18:18:46,247 - INFO - User 8234178181 viewed views menu
+2026-03-30 18:18:48,603 - INFO - User 8234178181 opened auto_views menu
+2026-03-30 18:18:59,926 - INFO - User 7501202985 viewed views menu
+2026-03-30 18:19:03,677 - INFO - User 7501202985 opened auto_views menu
+2026-03-30 18:19:23,653 - ERROR - Bot error: Database.create_auto_view_tarif() takes 6 positional arguments but 7 were given
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Users/Xaru/Desktop/bot.zakaz/handlers/auto_views_handlers.py", line 227, in process_hours_setup
+    db.create_auto_view_tarif(user_id, tarif_type, channel_name, message_link, views_count, duration_hours)
+TypeError: Database.create_auto_view_tarif() takes 6 positional arguments but 7 were given
+2026-03-30 18:22:35,969 - INFO - Bot initialized successfully
+2026-03-30 18:22:36,414 - INFO - ✅ Commands set successfully
+2026-03-30 18:22:36,415 - INFO - Registering handlers...
+2026-03-30 18:22:36,416 - INFO - ✅ All handlers registered
+2026-03-30 18:22:36,416 - INFO - Registering callbacks...
+2026-03-30 18:22:36,417 - INFO - ✅ All callbacks registered
+2026-03-30 18:22:36,417 - INFO - === BOT STARTED ===
+2026-03-30 18:22:41,735 - INFO - User 8234178181 viewed views menu
+2026-03-30 18:22:45,684 - INFO - User 7501202985 viewed views menu
+2026-03-30 18:22:48,663 - INFO - User 7501202985 opened auto_views menu
+2026-03-30 18:23:06,825 - ERROR - Bot error: Database.create_auto_view_tarif() takes 6 positional arguments but 7 were given
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 87, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Users/Xaru/Desktop/bot.zakaz/handlers/auto_views_handlers.py", line 227, in process_hours_setup
+    db.create_auto_view_tarif(user_id, tarif_type, channel_name, message_link, views_count, duration_hours)
+TypeError: Database.create_auto_view_tarif() takes 6 positional arguments but 7 were given
+2026-03-30 18:30:11,106 - INFO - Bot initialized successfully
+2026-03-30 18:30:11,683 - INFO - ✅ Commands set successfully
+2026-03-30 18:30:11,683 - INFO - Registering handlers...
+2026-03-30 18:30:11,684 - INFO - ✅ All handlers registered
+2026-03-30 18:30:11,684 - INFO - Registering callbacks...
+2026-03-30 18:30:11,685 - INFO - ✅ All callbacks registered
+2026-03-30 18:30:11,685 - INFO - Registering auto_views handlers...
+2026-03-30 18:30:11,685 - INFO - ✅ Auto views handlers registered
+2026-03-30 18:30:11,686 - INFO - Starting auto_renew background task...
+2026-03-30 18:30:11,686 - INFO - ✅ Auto renew task started
+2026-03-30 18:30:11,686 - INFO - === BOT STARTED ===
+2026-03-30 18:30:21,584 - INFO - User 7501202985 viewed views menu
+2026-03-30 18:30:23,602 - INFO - User 7501202985 opened auto_views menu
+2026-03-30 18:30:54,125 - INFO - User 7501202985 viewed views menu
+2026-03-30 18:30:55,932 - INFO - User 7501202985 opened views menu
+2026-03-30 18:31:14,573 - INFO - Views order created for user 7501202985
+2026-03-30 18:31:14,918 - INFO - User 7501202985 created views order #1
+2026-03-30 18:31:16,886 - INFO - User 7501202985 viewed views menu
+2026-03-30 18:31:18,987 - INFO - User 7501202985 opened auto_views menu
+2026-03-30 18:31:38,695 - INFO - Auto view tarif created for user 7501202985, channel @my_channel
+2026-03-30 18:31:38,698 - ERROR - Bot error: name 'call' is not defined
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 104, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Users/Xaru/Desktop/bot.zakaz/handlers/auto_views_handlers.py", line 263, in process_hours_setup
+    show_auto_views_settings_menu(call, bot, user_states, user_id, message.chat.id)
+                                  ^^^^
+NameError: name 'call' is not defined. Did you mean: 'all'?
+2026-03-30 18:36:34,719 - INFO - Bot initialized successfully
+2026-03-30 18:36:35,337 - INFO - ✅ Commands set successfully
+2026-03-30 18:36:35,337 - INFO - Registering handlers...
+2026-03-30 18:36:35,339 - INFO - ✅ All handlers registered
+2026-03-30 18:36:35,339 - INFO - Registering callbacks...
+2026-03-30 18:36:35,340 - INFO - ✅ All callbacks registered
+2026-03-30 18:36:35,340 - INFO - Registering auto_views handlers...
+2026-03-30 18:36:35,340 - INFO - ✅ Auto views handlers registered
+2026-03-30 18:36:35,341 - INFO - Starting auto_renew background task...
+2026-03-30 18:36:35,341 - INFO - ✅ Auto renew task started
+2026-03-30 18:36:35,342 - INFO - === BOT STARTED ===
+2026-03-30 18:36:45,150 - INFO - User 7501202985 viewed views menu
+2026-03-30 18:36:49,354 - INFO - User 7501202985 opened auto_views menu
+2026-03-30 18:37:10,386 - INFO - Auto view tarif created for user 7501202985, channel @my_channel
+2026-03-30 18:38:49,009 - INFO - Bot initialized successfully
+2026-03-30 18:38:49,498 - INFO - ✅ Commands set successfully
+2026-03-30 18:38:49,498 - INFO - Registering handlers...
+2026-03-30 18:38:49,499 - INFO - ✅ All handlers registered
+2026-03-30 18:38:49,500 - INFO - Registering callbacks...
+2026-03-30 18:38:49,500 - INFO - ✅ All callbacks registered
+2026-03-30 18:38:49,500 - INFO - Registering auto_views handlers...
+2026-03-30 18:38:49,501 - INFO - ✅ Auto views handlers registered
+2026-03-30 18:38:49,501 - INFO - Starting auto_renew background task...
+2026-03-30 18:38:49,501 - INFO - ✅ Auto renew task started
+2026-03-30 18:38:49,502 - INFO - === BOT STARTED ===
+2026-03-30 18:38:57,258 - INFO - User 7501202985 viewed views menu
+2026-03-30 18:38:58,841 - INFO - User 7501202985 opened auto_views menu
+2026-03-30 18:39:23,703 - INFO - Auto view tarif created for user 7501202985, channel @my_channel
+2026-03-30 18:41:58,948 - INFO - Bot initialized successfully
+2026-03-30 18:42:01,059 - INFO - ✅ Commands set successfully
+2026-03-30 18:42:01,060 - INFO - Registering handlers...
+2026-03-30 18:42:01,060 - INFO - ✅ All handlers registered
+2026-03-30 18:42:01,061 - INFO - Registering callbacks...
+2026-03-30 18:42:01,062 - INFO - ✅ All callbacks registered
+2026-03-30 18:42:01,062 - INFO - Registering auto_views handlers...
+2026-03-30 18:42:01,062 - INFO - ✅ Auto views handlers registered
+2026-03-30 18:42:01,062 - INFO - Starting auto_renew background task...
+2026-03-30 18:42:01,063 - INFO - ✅ Auto renew task started
+2026-03-30 18:42:01,063 - INFO - === BOT STARTED ===
+2026-03-30 18:42:30,249 - INFO - User 7501202985 viewed views menu
+2026-03-30 18:42:32,675 - INFO - User 7501202985 opened auto_views menu
+2026-03-30 18:42:50,678 - INFO - Auto view tarif created for user 7501202985, channel @my_channel
+2026-03-30 18:42:50,971 - INFO - User 7501202985 created auto_view tarif #None
+2026-03-30 18:42:56,030 - INFO - User 7501202985 viewed views menu
+2026-03-30 18:43:08,116 - ERROR - Bot error: invalid literal for int() with base 10: 'None'
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 104, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10456, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Xaru/Desktop/bot.zakaz/handlers/auto_views_handlers.py", line 200, in admin_approve_tarif
+    tarif_id = int(call.data.replace("admin_approve_tarif_", ""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'None'
+2026-03-30 18:47:45,696 - INFO - Bot initialized successfully
+2026-03-30 18:47:46,152 - INFO - ✅ Commands set successfully
+2026-03-30 18:47:46,153 - INFO - Registering handlers...
+2026-03-30 18:47:46,154 - INFO - ✅ All handlers registered
+2026-03-30 18:47:46,154 - INFO - Registering callbacks...
+2026-03-30 18:47:46,155 - INFO - ✅ All callbacks registered
+2026-03-30 18:47:46,155 - INFO - Registering auto_views handlers...
+2026-03-30 18:47:46,156 - INFO - ✅ Auto views handlers registered
+2026-03-30 18:47:46,156 - INFO - Starting auto_renew background task...
+2026-03-30 18:47:46,157 - INFO - ✅ Auto renew task started
+2026-03-30 18:47:46,157 - INFO - === BOT STARTED ===
+2026-03-30 18:47:46,168 - ERROR - get_expiring_auto_view_tarifs error: no such column: status
+2026-03-30 18:49:45,056 - INFO - Bot initialized successfully
+2026-03-30 18:49:45,492 - INFO - ✅ Commands set successfully
+2026-03-30 18:49:45,493 - INFO - Registering handlers...
+2026-03-30 18:49:45,494 - INFO - ✅ All handlers registered
+2026-03-30 18:49:45,494 - INFO - Registering callbacks...
+2026-03-30 18:49:45,495 - INFO - ✅ All callbacks registered
+2026-03-30 18:49:45,495 - INFO - Registering auto_views handlers...
+2026-03-30 18:49:45,496 - INFO - ✅ Auto views handlers registered
+2026-03-30 18:49:45,496 - INFO - Starting auto_renew background task...
+2026-03-30 18:49:45,497 - INFO - ✅ Auto renew task started
+2026-03-30 18:49:45,497 - INFO - === BOT STARTED ===
+2026-03-30 18:49:51,691 - INFO - User 8234178181 viewed views menu
+2026-03-30 18:50:01,896 - INFO - User 7501202985 opened views menu
+2026-03-30 18:50:04,759 - INFO - back_to_main clicked by 7501202985
+2026-03-30 18:50:05,014 - INFO - Main menu sent to 7501202985
+2026-03-30 18:50:06,573 - INFO - User 7501202985 viewed views menu
+2026-03-30 18:50:09,957 - INFO - User 7501202985 opened auto_views menu
+2026-03-30 18:50:30,089 - INFO - User 7501202985 extended tarif 1
+2026-03-30 18:50:35,344 - ERROR - Bot error: 7501202985
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 104, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Users/Xaru/Desktop/bot.zakaz/handlers/auto_views_handlers.py", line 136, in process_channel
+    user_states[user_id]["channel_name"] = channel_name
+    ~~~~~~~~~~~^^^^^^^^^
+KeyError: 7501202985
+2026-03-30 18:51:42,424 - INFO - Bot initialized successfully
+2026-03-30 18:51:44,270 - INFO - ✅ Commands set successfully
+2026-03-30 18:51:44,270 - INFO - Registering handlers...
+2026-03-30 18:51:44,271 - INFO - ✅ All handlers registered
+2026-03-30 18:51:44,271 - INFO - Registering callbacks...
+2026-03-30 18:51:44,272 - INFO - ✅ All callbacks registered
+2026-03-30 18:51:44,272 - INFO - Registering auto_views handlers...
+2026-03-30 18:51:44,272 - INFO - ✅ Auto views handlers registered
+2026-03-30 18:51:44,273 - INFO - Starting auto_renew background task...
+2026-03-30 18:51:44,273 - INFO - ✅ Auto renew task started
+2026-03-30 18:51:44,273 - INFO - === BOT STARTED ===
+2026-03-30 18:51:48,557 - INFO - User 7501202985 viewed views menu
+2026-03-30 18:51:53,450 - INFO - User 7501202985 opened auto_views menu
+2026-03-30 18:53:15,503 - INFO - Auto view tarif created for user 7501202985, channel 👀 Просмотры
+2026-03-30 18:53:15,800 - INFO - User 7501202985 created tarif #5
+2026-03-30 19:07:20,036 - INFO - ✅ START command from user 1074194843
+2026-03-30 19:07:23,215 - INFO - User 1074194843 viewed subscribers menu
+2026-03-30 19:08:13,580 - INFO - User 1074194843 viewed views menu
+2026-03-30 19:08:24,558 - INFO - User 1074194843 viewed balance
+2026-03-30 19:08:33,324 - INFO - User 1074194843 viewed reactions menu
+2026-03-30 19:08:35,820 - INFO - User 1074194843 entered ask_admin mode
+2026-03-30 19:08:46,441 - INFO - ✅ Text from 1074194843 sent to PAYMENT_GROUP
+2026-03-30 19:21:04,148 - INFO - Bot initialized successfully
+2026-03-30 19:21:04,784 - INFO - ✅ Commands set successfully
+2026-03-30 19:21:04,785 - INFO - Registering handlers...
+2026-03-30 19:21:04,786 - INFO - ✅ All handlers registered
+2026-03-30 19:21:04,786 - INFO - Registering callbacks...
+2026-03-30 19:21:04,787 - INFO - ✅ All callbacks registered
+2026-03-30 19:21:04,787 - INFO - Registering auto_views handlers...
+2026-03-30 19:21:04,788 - INFO - ✅ Auto views handlers registered
+2026-03-30 19:21:04,788 - INFO - Starting auto_renew background task...
+2026-03-30 19:21:04,788 - INFO - ✅ Auto renew task started
+2026-03-30 19:21:04,789 - INFO - === BOT STARTED ===
+2026-03-30 19:26:57,665 - INFO - Admin 1074194843 returned to main panel
+2026-03-30 19:29:01,050 - ERROR - Bot error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 104, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10456, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Xaru/Desktop/bot.zakaz/callbacks/admin_callbacks.py", line 398, in admin_balance_menu
+    bot.answer_callback_query(call.id)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 6580, in answer_callback_query
+    return apihelper.answer_callback_query(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 2047, in answer_callback_query
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+2026-03-30 19:32:47,449 - INFO - Bot initialized successfully
+2026-03-30 19:32:49,278 - INFO - ✅ Commands set successfully
+2026-03-30 19:32:49,279 - INFO - Registering handlers...
+2026-03-30 19:32:49,279 - INFO - ✅ All handlers registered
+2026-03-30 19:32:49,280 - INFO - Registering callbacks...
+2026-03-30 19:32:49,280 - INFO - ✅ All callbacks registered
+2026-03-30 19:32:49,281 - INFO - Registering auto_views handlers...
+2026-03-30 19:32:49,281 - INFO - ✅ Auto views handlers registered
+2026-03-30 19:32:49,281 - INFO - Starting auto_renew background task...
+2026-03-30 19:32:49,282 - INFO - ✅ Auto renew task started
+2026-03-30 19:32:49,282 - INFO - === BOT STARTED ===
+2026-03-30 19:32:51,954 - INFO - User 1074194843 viewed subscribers menu
+2026-03-30 19:32:52,173 - INFO - User 1074194843 viewed subscribers menu
+2026-03-30 19:32:52,603 - INFO - User 1074194843 viewed subscribers menu
+2026-03-30 19:32:52,819 - INFO - User 1074194843 viewed subscribers menu
+2026-03-30 19:32:53,269 - INFO - User 1074194843 viewed subscribers menu
+2026-03-30 19:32:53,473 - INFO - User 1074194843 viewed subscribers menu
+2026-03-30 19:32:53,573 - INFO - User 1074194843 viewed subscribers menu
+2026-03-30 19:32:53,671 - INFO - ✅ START command from user 1074194843
+2026-03-30 19:33:02,688 - INFO - User 1074194843 viewed views menu
+2026-03-30 19:33:16,675 - INFO - Admin 1074194843 returned to main panel
+2026-03-30 19:33:43,060 - INFO - User 1074194843 viewed views menu
+2026-03-30 19:33:46,181 - INFO - User 1074194843 viewed views menu
+2026-03-30 19:33:49,789 - INFO - User 1074194843 opened views menu
+2026-03-30 20:04:19,964 - INFO - User 1074194843 viewed subscribers menu
+2026-03-30 20:04:23,999 - INFO - User 1074194843 viewed subscribers menu
+2026-03-30 20:04:50,496 - INFO - ✅ Order #5 created by user 1074194843
+2026-03-30 20:04:50,771 - INFO - ✅ Order #5 notification sent to admin
+2026-03-30 20:04:52,541 - INFO - ✅ Order #6 created by user 1074194843
+2026-03-30 20:04:53,241 - INFO - ✅ Order #6 notification sent to admin
+2026-03-30 20:05:05,873 - INFO - User 1074194843 viewed subscribers menu
+2026-03-30 20:05:07,698 - INFO - User 1074194843 viewed subscribers menu
+2026-03-30 20:05:32,254 - INFO - ✅ Order #7 created by user 1074194843
+2026-03-30 20:05:32,496 - INFO - ✅ Order #7 notification sent to admin
+2026-03-30 20:41:02,444 - ERROR - Bot error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 104, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 115, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+2026-03-30 22:53:22,677 - INFO - Bot initialized successfully
+2026-03-30 22:53:23,355 - INFO - ✅ Commands set successfully
+2026-03-30 22:53:23,356 - INFO - Registering handlers...
+2026-03-30 22:53:23,357 - INFO - ✅ All handlers registered
+2026-03-30 22:53:23,357 - INFO - Registering callbacks...
+2026-03-30 22:53:23,357 - INFO - ✅ All callbacks registered
+2026-03-30 22:53:23,358 - INFO - Registering auto_views handlers...
+2026-03-30 22:53:23,358 - INFO - ✅ Auto views handlers registered
+2026-03-30 22:53:23,358 - INFO - Starting auto_renew background task...
+2026-03-30 22:53:23,359 - INFO - ✅ Auto renew task started
+2026-03-30 22:53:23,359 - INFO - === BOT STARTED ===
+2026-03-30 22:53:24,751 - INFO - User 1074194843 viewed orders menu
+2026-03-30 22:53:24,785 - INFO - ✅ START command from user 1074194843
+2026-03-30 22:53:30,656 - INFO - User 8234178181 viewed views menu
+2026-03-30 22:53:42,427 - INFO - User 8234178181 viewed views menu
+2026-03-30 22:53:47,079 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 22:53:58,073 - INFO - User 8234178181 viewed views menu
+2026-03-30 22:58:08,944 - INFO - Bot initialized successfully
+2026-03-30 22:58:09,618 - INFO - ✅ Commands set successfully
+2026-03-30 22:58:09,618 - INFO - Registering handlers...
+2026-03-30 22:58:09,619 - INFO - ✅ All handlers registered
+2026-03-30 22:58:09,620 - INFO - Registering callbacks...
+2026-03-30 22:58:09,620 - INFO - ✅ All callbacks registered
+2026-03-30 22:58:09,620 - INFO - Registering auto_views handlers...
+2026-03-30 22:58:09,620 - INFO - ✅ Auto views handlers registered
+2026-03-30 22:58:09,621 - INFO - Starting auto_renew background task...
+2026-03-30 22:58:09,621 - INFO - ✅ Auto renew task started
+2026-03-30 22:58:09,622 - INFO - === BOT STARTED ===
+2026-03-30 22:58:10,991 - INFO - ✅ START command from user 1074194843
+2026-03-30 22:58:16,627 - INFO - User 8234178181 viewed views menu
+2026-03-30 23:00:10,470 - INFO - Bot initialized successfully
+2026-03-30 23:00:11,072 - INFO - ✅ Commands set successfully
+2026-03-30 23:00:11,072 - INFO - Registering handlers...
+2026-03-30 23:00:11,073 - INFO - ✅ All handlers registered
+2026-03-30 23:00:11,074 - INFO - Registering callbacks...
+2026-03-30 23:00:11,074 - INFO - ✅ All callbacks registered
+2026-03-30 23:00:11,074 - INFO - Registering auto_views handlers...
+2026-03-30 23:00:11,074 - INFO - ✅ Auto views handlers registered
+2026-03-30 23:00:11,075 - INFO - Starting auto_renew background task...
+2026-03-30 23:00:11,075 - INFO - ✅ Auto renew task started
+2026-03-30 23:00:11,075 - INFO - === BOT STARTED ===
+2026-03-30 23:00:14,658 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 23:00:21,401 - INFO - User 8234178181 viewed views menu
+2026-03-30 23:00:23,882 - INFO - back_to_main clicked by 8234178181
+2026-03-30 23:00:24,323 - INFO - Main menu sent to 8234178181
+2026-03-30 23:06:24,003 - INFO - Bot initialized successfully
+2026-03-30 23:06:24,673 - INFO - ✅ Commands set successfully
+2026-03-30 23:06:24,673 - INFO - Registering handlers...
+2026-03-30 23:06:24,673 - INFO - ✅ All handlers registered
+2026-03-30 23:06:24,674 - INFO - Registering callbacks...
+2026-03-30 23:06:24,674 - INFO - ✅ All callbacks registered
+2026-03-30 23:06:24,674 - INFO - Registering auto_views handlers...
+2026-03-30 23:06:24,675 - INFO - ✅ Auto views handlers registered
+2026-03-30 23:06:24,675 - INFO - Starting auto_renew background task...
+2026-03-30 23:06:24,685 - INFO - ✅ Auto renew task started
+2026-03-30 23:06:24,695 - INFO - === BOT STARTED ===
+2026-03-30 23:07:27,851 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 23:07:39,425 - INFO - User 8234178181 viewed orders menu
+2026-03-30 23:07:40,134 - INFO - User 8234178181 viewed balance
+2026-03-30 23:07:40,508 - INFO - User 8234178181 viewed balance
+2026-03-30 23:07:44,747 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 23:07:59,785 - INFO - User 8234178181 viewed orders menu
+2026-03-30 23:08:03,335 - INFO - User 8234178181 viewed balance
+2026-03-30 23:08:05,815 - INFO - User 8234178181 entered ask_admin mode
+2026-03-30 23:08:10,675 - INFO - ✅ Text from 8234178181 sent to PAYMENT_GROUP
+2026-03-30 23:08:15,261 - INFO - User 8234178181 viewed views menu
+2026-03-30 23:08:22,547 - INFO - User 8234178181 viewed available tariffs (no balance)
+2026-03-30 23:08:42,905 - INFO - User 8234178181 viewed available tariffs (no balance)
+2026-03-30 23:08:45,374 - INFO - User 8234178181 tried to access auto_views without balance
+2026-03-30 23:10:43,583 - INFO - User 8234178181 viewed views menu
+2026-03-30 23:11:10,293 - INFO - User 8234178181 viewed available tariffs (no balance)
+2026-03-30 23:11:44,768 - INFO - User 8234178181 viewed orders menu
+2026-03-30 23:11:49,552 - INFO - User 8234178181 viewed balance
+2026-03-30 23:18:22,595 - INFO - ✅ START command from user 1074194843
+2026-03-30 23:18:24,889 - INFO - User 1074194843 viewed views menu
+2026-03-30 23:18:36,669 - INFO - back_to_main clicked by 1074194843
+2026-03-30 23:18:37,712 - INFO - Main menu sent to 1074194843
+2026-03-30 23:18:38,743 - INFO - User 1074194843 viewed available tariffs (no balance)
+2026-03-30 23:18:53,877 - INFO - User 1074194843 viewed views menu
+2026-03-30 23:18:55,551 - INFO - User 1074194843 viewed balance
+2026-03-30 23:19:18,102 - INFO - User 1074194843 waiting for payment proof for USDT
+2026-03-30 23:19:30,907 - INFO - ✅ Payment photo from user 1074194843 (@the_akmaljonovich) sent to GROUP
+2026-03-30 23:19:39,411 - INFO - User 1074194843 viewed orders menu
+2026-03-30 23:19:49,757 - INFO - User 1074194843 entered ask_admin mode
+2026-03-30 23:22:35,153 - INFO - Bot initialized successfully
+2026-03-30 23:22:36,278 - INFO - ✅ Commands set successfully
+2026-03-30 23:22:36,278 - INFO - Registering handlers...
+2026-03-30 23:22:36,279 - INFO - ✅ All handlers registered
+2026-03-30 23:22:36,279 - INFO - Registering callbacks...
+2026-03-30 23:22:36,280 - INFO - ✅ All callbacks registered
+2026-03-30 23:22:36,280 - INFO - Registering auto_views handlers...
+2026-03-30 23:22:36,280 - INFO - ✅ Auto views handlers registered
+2026-03-30 23:22:36,280 - INFO - Starting auto_renew background task...
+2026-03-30 23:22:36,281 - INFO - ✅ Auto renew task started
+2026-03-30 23:22:36,281 - INFO - === BOT STARTED ===
+2026-03-30 23:22:38,403 - INFO - User 8234178181 viewed balance
+2026-03-30 23:22:38,573 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 23:22:42,875 - INFO - User 8234178181 viewed views menu
+2026-03-30 23:22:45,996 - INFO - User 8234178181 viewed available tariffs (no balance)
+2026-03-30 23:22:48,147 - INFO - User 8234178181 tried to buy tarif 10k without balance
+2026-03-30 23:22:51,102 - INFO - User 8234178181 viewed available tariffs (no balance)
+2026-03-30 23:22:53,142 - INFO - User 8234178181 opened views menu (balance: $0.00)
+2026-03-30 23:22:55,902 - INFO - User 8234178181 viewed available tariffs (no balance)
+2026-03-30 23:22:57,346 - INFO - User 8234178181 opened views menu (balance: $0.00)
+2026-03-30 23:22:58,954 - INFO - User 8234178181 viewed auto_views (no balance)
+2026-03-30 23:23:01,002 - INFO - User 8234178181 opened views menu (balance: $0.00)
+2026-03-30 23:23:05,017 - INFO - User 8234178181 viewed orders menu
+2026-03-30 23:23:07,043 - INFO - User 8234178181 viewed balance
+2026-03-30 23:23:16,525 - INFO - User 8234178181 entered amount $5.00 for USDT
+2026-03-30 23:23:20,599 - INFO - User 8234178181 waiting for payment proof for USDT
+2026-03-30 23:23:27,750 - INFO - User 1074194843 viewed subscribers menu
+2026-03-30 23:23:30,541 - INFO - ✅ Payment photo from user 8234178181 (@VVebstyle) sent to GROUP
+2026-03-30 23:23:32,436 - INFO - back_to_main clicked by 1074194843
+2026-03-30 23:23:32,723 - INFO - Main menu sent to 1074194843
+2026-03-30 23:23:34,127 - INFO - User 8234178181 entered ask_admin mode
+2026-03-30 23:23:36,444 - INFO - ✅ Text from 8234178181 sent to PAYMENT_GROUP
+2026-03-30 23:23:45,486 - INFO - User 1074194843 viewed subscribers menu
+2026-03-30 23:24:48,005 - INFO - Bot initialized successfully
+2026-03-30 23:24:48,522 - INFO - ✅ Commands set successfully
+2026-03-30 23:24:48,522 - INFO - Registering handlers...
+2026-03-30 23:24:48,522 - INFO - ✅ All handlers registered
+2026-03-30 23:24:48,523 - INFO - Registering callbacks...
+2026-03-30 23:24:48,523 - INFO - ✅ All callbacks registered
+2026-03-30 23:24:48,523 - INFO - Registering auto_views handlers...
+2026-03-30 23:24:48,523 - INFO - ✅ Auto views handlers registered
+2026-03-30 23:24:48,524 - INFO - Starting auto_renew background task...
+2026-03-30 23:24:48,524 - INFO - ✅ Auto renew task started
+2026-03-30 23:24:48,524 - INFO - === BOT STARTED ===
+2026-03-30 23:24:51,487 - INFO - User 8234178181 viewed reactions menu
+2026-03-30 23:25:04,858 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 23:25:07,282 - INFO - User 8234178181 viewed views menu
+2026-03-30 23:25:08,889 - INFO - User 8234178181 entered ask_admin mode
+2026-03-30 23:25:11,851 - INFO - User 8234178181 entered ask_admin mode
+2026-03-30 23:25:14,047 - INFO - User 8234178181 viewed balance
+2026-03-30 23:41:39,477 - INFO - User 1074194843 viewed subscribers menu
+2026-03-30 23:41:47,032 - INFO - User 1074194843 viewed views menu
+2026-03-30 23:46:41,805 - INFO - Bot initialized successfully
+2026-03-30 23:46:42,280 - INFO - ✅ Commands set successfully
+2026-03-30 23:46:42,280 - INFO - Registering handlers...
+2026-03-30 23:46:42,281 - INFO - ✅ All handlers registered
+2026-03-30 23:46:42,281 - INFO - Registering callbacks...
+2026-03-30 23:46:42,282 - INFO - ✅ All callbacks registered
+2026-03-30 23:46:42,282 - INFO - Registering auto_views handlers...
+2026-03-30 23:46:42,283 - INFO - ✅ Auto views handlers registered
+2026-03-30 23:46:42,283 - INFO - Starting auto_renew background task...
+2026-03-30 23:46:42,284 - INFO - ✅ Auto renew task started
+2026-03-30 23:46:42,284 - INFO - === BOT STARTED ===
+2026-03-30 23:46:50,760 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 23:46:53,718 - INFO - User 8234178181 viewed balance
+2026-03-30 23:47:02,901 - INFO - User 8234178181 entered amount $15.00 for LTC
+2026-03-30 23:47:04,890 - INFO - User 8234178181 waiting for payment proof for LTC
+2026-03-30 23:47:12,572 - INFO - ✅ Payment photo from user 8234178181 (@VVebstyle) sent to GROUP
+2026-03-30 23:47:38,165 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 23:47:40,683 - INFO - back_to_main clicked by 8234178181
+2026-03-30 23:47:40,948 - INFO - Main menu sent to 8234178181
+2026-03-30 23:47:42,509 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 23:48:05,090 - INFO - back_to_main clicked by 8234178181
+2026-03-30 23:48:05,365 - INFO - Main menu sent to 8234178181
+2026-03-30 23:48:07,664 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 23:49:45,786 - INFO - User 8234178181 viewed balance
+2026-03-30 23:49:48,528 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 23:54:07,616 - INFO - Bot initialized successfully
+2026-03-30 23:54:08,086 - INFO - ✅ Commands set successfully
+2026-03-30 23:54:08,086 - INFO - Registering handlers...
+2026-03-30 23:54:08,087 - INFO - ✅ All handlers registered
+2026-03-30 23:54:08,087 - INFO - Registering callbacks...
+2026-03-30 23:54:08,088 - INFO - ✅ All callbacks registered
+2026-03-30 23:54:08,088 - INFO - Registering auto_views handlers...
+2026-03-30 23:54:08,088 - INFO - ✅ Auto views handlers registered
+2026-03-30 23:54:08,088 - INFO - Starting auto_renew background task...
+2026-03-30 23:54:08,089 - INFO - ✅ Auto renew task started
+2026-03-30 23:54:08,089 - INFO - === BOT STARTED ===
+2026-03-30 23:54:11,856 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 23:54:14,084 - INFO - User 8234178181 viewed subscribers menu
+2026-03-30 23:57:41,713 - INFO - ✅ START command from user 1074194843
+2026-03-30 23:57:45,193 - INFO - User 1074194843 viewed views menu
+2026-03-30 23:57:51,163 - INFO - User 1074194843 viewed available tariffs (no balance)
+2026-03-30 23:58:15,248 - INFO - User 1074194843 viewed balance
+2026-03-30 23:58:49,273 - INFO - User 1074194843 entered amount $5.00 for LTC
+2026-03-30 23:58:49,294 - INFO - User 1074194843 entered amount $5.00 for LTC
+2026-03-30 23:58:49,501 - INFO - User 1074194843 entered amount $5.00 for LTC
+2026-03-30 23:58:57,077 - INFO - User 1074194843 viewed subscribers menu
+2026-03-30 23:59:07,825 - INFO - User 1074194843 viewed views menu
+2026-03-30 23:59:10,177 - INFO - User 1074194843 viewed available tariffs (no balance)
+2026-03-30 23:59:11,501 - INFO - User 1074194843 tried to buy tarif 1k without balance
+2026-03-31 13:46:47,982 - ERROR - Bot error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 104, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 115, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+2026-03-31 21:41:58,043 - INFO - Bot initialized successfully
+2026-03-31 21:41:58,905 - INFO - ✅ Commands set successfully
+2026-03-31 21:41:58,905 - INFO - Registering handlers...
+2026-03-31 21:41:58,906 - INFO - ✅ All handlers registered
+2026-03-31 21:41:58,906 - INFO - Registering callbacks...
+2026-03-31 21:41:58,907 - INFO - ✅ All callbacks registered
+2026-03-31 21:41:58,907 - INFO - Registering auto_views handlers...
+2026-03-31 21:41:58,908 - INFO - ✅ Auto views handlers registered
+2026-03-31 21:41:58,908 - INFO - Starting auto_renew background task...
+2026-03-31 21:41:58,909 - INFO - ✅ Auto renew task started
+2026-03-31 21:41:58,909 - INFO - === BOT STARTED ===
+2026-03-31 21:42:00,449 - INFO - ✅ START command from user 1074194843
+2026-03-31 21:42:00,644 - INFO - ✅ START command from user 1074194843
+2026-03-31 21:42:00,669 - INFO - User 7501202985 viewed balance
+2026-03-31 21:42:00,872 - INFO - ✅ START command from user 1074194843
+2026-03-31 21:42:01,116 - INFO - ✅ START command from user 1074194843
+2026-03-31 21:42:17,610 - INFO - User 8234178181 viewed subscribers menu
+2026-03-31 21:42:20,617 - INFO - User 8234178181 viewed views menu
+2026-03-31 21:42:23,244 - INFO - User 8234178181 viewed available tariffs (no balance)
+2026-03-31 21:42:25,258 - INFO - User 8234178181 viewed reactions menu
+2026-03-31 21:42:27,674 - INFO - User 8234178181 viewed orders menu
+2026-03-31 21:42:29,476 - INFO - User 8234178181 viewed balance
+2026-03-31 21:42:40,494 - INFO - User 8234178181 entered amount $15.00 for BTC
+2026-03-31 21:42:43,461 - INFO - User 8234178181 waiting for payment proof for BTC
+2026-03-31 21:42:51,345 - INFO - ✅ Payment photo from user 8234178181 (@VVebstyle) sent to GROUP
+2026-03-31 21:42:57,778 - INFO - User 8234178181 entered ask_admin mode
+2026-03-31 21:43:03,840 - INFO - ✅ Text from 8234178181 sent to PAYMENT_GROUP
+2026-03-31 22:03:25,726 - INFO - Bot initialized successfully
+2026-03-31 22:03:26,355 - INFO - ✅ Commands set successfully
+2026-03-31 22:03:26,356 - INFO - Registering handlers...
+2026-03-31 22:03:26,357 - INFO - ✅ All handlers registered
+2026-03-31 22:03:26,357 - INFO - Registering callbacks...
+2026-03-31 22:03:26,358 - INFO - ✅ All callbacks registered
+2026-03-31 22:03:26,359 - INFO - Registering auto_views handlers...
+2026-03-31 22:03:26,359 - INFO - ✅ Auto views handlers registered
+2026-03-31 22:03:26,359 - INFO - Starting auto_renew background task...
+2026-03-31 22:03:26,360 - INFO - ✅ Auto renew task started
+2026-03-31 22:03:26,360 - INFO - === BOT STARTED ===
+2026-03-31 22:03:36,269 - INFO - User 8234178181 viewed subscribers menu
+2026-03-31 22:03:41,129 - INFO - User 8234178181 viewed views menu
+2026-03-31 22:03:44,043 - INFO - User 8234178181 viewed available tariffs (no balance)
+2026-03-31 22:03:46,488 - INFO - User 8234178181 tried to buy tarif 10k without balance
+2026-03-31 22:03:49,912 - INFO - User 8234178181 viewed subscribers menu
+2026-03-31 22:04:10,726 - INFO - User 8234178181 viewed balance
+2026-03-31 22:04:43,355 - INFO - User 8234178181 entered amount $15.00 for LTC
+2026-03-31 22:04:45,577 - INFO - User 8234178181 waiting for payment proof for LTC
+2026-03-31 22:04:53,560 - INFO - ✅ Payment photo from user 8234178181 (@VVebstyle) sent to GROUP
+2026-03-31 22:05:24,741 - INFO - User 8234178181 viewed subscribers menu
+2026-03-31 22:10:15,192 - INFO - Bot initialized successfully
+2026-03-31 22:10:17,505 - INFO - ✅ Commands set successfully
+2026-03-31 22:10:17,505 - INFO - Registering handlers...
+2026-03-31 22:10:17,506 - INFO - ✅ All handlers registered
+2026-03-31 22:10:17,506 - INFO - Registering callbacks...
+2026-03-31 22:10:17,507 - INFO - ✅ All callbacks registered
+2026-03-31 22:10:17,507 - INFO - Registering auto_views handlers...
+2026-03-31 22:10:17,507 - INFO - ✅ Auto views handlers registered
+2026-03-31 22:10:17,508 - INFO - Starting auto_renew background task...
+2026-03-31 22:10:17,508 - INFO - ✅ Auto renew task started
+2026-03-31 22:10:17,509 - INFO - === BOT STARTED ===
+2026-03-31 22:10:23,803 - INFO - User 8234178181 viewed balance
+2026-03-31 22:10:29,544 - INFO - User 8234178181 entered amount $13.00 for LTC
+2026-03-31 22:10:32,938 - INFO - User 8234178181 waiting for payment proof for LTC
+2026-03-31 22:10:48,894 - INFO - ✅ Payment photo from user 8234178181 (@VVebstyle) sent to GROUP
+2026-03-31 22:12:27,979 - INFO - Bot initialized successfully
+2026-03-31 22:12:28,706 - INFO - ✅ Commands set successfully
+2026-03-31 22:12:28,706 - INFO - Registering handlers...
+2026-03-31 22:12:28,707 - INFO - ✅ All handlers registered
+2026-03-31 22:12:28,707 - INFO - Registering callbacks...
+2026-03-31 22:12:28,708 - INFO - ✅ All callbacks registered
+2026-03-31 22:12:28,708 - INFO - Registering auto_views handlers...
+2026-03-31 22:12:28,708 - INFO - ✅ Auto views handlers registered
+2026-03-31 22:12:28,709 - INFO - Starting auto_renew background task...
+2026-03-31 22:12:28,709 - INFO - ✅ Auto renew task started
+2026-03-31 22:12:28,710 - INFO - === BOT STARTED ===
+2026-03-31 22:12:34,383 - INFO - User 8234178181 viewed balance
+2026-03-31 22:12:41,589 - INFO - User 8234178181 entered amount $14.00 for USDT
+2026-03-31 22:12:43,398 - INFO - User 8234178181 waiting for payment proof for USDT
+2026-03-31 22:12:50,103 - INFO - ✅ Payment photo from user 8234178181 (@VVebstyle) sent to admin with buttons
+2026-03-31 22:12:59,855 - INFO - ✅ Admin 8234178181 accepted payment of $155555.00 for user 8234178181
+2026-03-31 22:13:03,896 - INFO - User 8234178181 viewed subscribers menu
+2026-03-31 22:15:03,418 - INFO - Bot initialized successfully
+2026-03-31 22:15:04,055 - INFO - ✅ Commands set successfully
+2026-03-31 22:15:04,055 - INFO - Registering handlers...
+2026-03-31 22:15:04,056 - INFO - ✅ All handlers registered
+2026-03-31 22:15:04,056 - INFO - Registering callbacks...
+2026-03-31 22:15:04,057 - INFO - ✅ All callbacks registered
+2026-03-31 22:15:04,057 - INFO - Registering auto_views handlers...
+2026-03-31 22:15:04,057 - INFO - ✅ Auto views handlers registered
+2026-03-31 22:15:04,058 - INFO - Starting auto_renew background task...
+2026-03-31 22:15:04,058 - INFO - ✅ Auto renew task started
+2026-03-31 22:15:04,059 - INFO - === BOT STARTED ===
+2026-03-31 22:15:07,532 - INFO - User 8234178181 viewed subscribers menu
+2026-03-31 22:15:09,717 - INFO - User 8234178181 viewed subscribers menu
+2026-03-31 22:15:13,838 - INFO - User 8234178181 viewed balance
+2026-03-31 22:15:17,281 - INFO - back_to_main clicked by 8234178181
+2026-03-31 22:15:18,501 - INFO - Main menu sent to 8234178181
+2026-03-31 22:15:18,617 - INFO - User 8234178181 viewed subscribers menu
+2026-03-31 22:18:31,337 - INFO - Bot initialized successfully
+2026-03-31 22:18:32,032 - INFO - ✅ Commands set successfully
+2026-03-31 22:18:32,033 - INFO - Registering handlers...
+2026-03-31 22:18:32,033 - INFO - ✅ All handlers registered
+2026-03-31 22:18:32,034 - INFO - Registering callbacks...
+2026-03-31 22:18:32,034 - INFO - ✅ All callbacks registered
+2026-03-31 22:18:32,034 - INFO - Registering auto_views handlers...
+2026-03-31 22:18:32,034 - INFO - ✅ Auto views handlers registered
+2026-03-31 22:18:32,035 - INFO - Starting auto_renew background task...
+2026-03-31 22:18:32,035 - INFO - ✅ Auto renew task started
+2026-03-31 22:18:32,036 - INFO - === BOT STARTED ===
+2026-03-31 22:18:39,340 - INFO - User 8234178181 viewed subscribers menu
+2026-03-31 22:18:44,555 - INFO - back_to_main clicked by 8234178181
+2026-03-31 22:18:45,009 - INFO - Main menu sent to 8234178181
+2026-03-31 22:18:59,122 - INFO - User 8234178181 viewed subscribers menu
+2026-03-31 22:19:01,447 - INFO - User 8234178181 viewed balance
+2026-03-31 22:19:08,238 - INFO - User 8234178181 entered amount $123.00 for LTC
+2026-03-31 22:19:10,740 - INFO - User 8234178181 waiting for payment proof for LTC
+2026-03-31 22:19:18,298 - INFO - ✅ Payment photo from user 8234178181 (@VVebstyle) sent to admin with buttons
+2026-03-31 22:19:25,396 - INFO - ✅ Admin 8234178181 accepted payment of $123.00 for user 8234178181
+2026-03-31 22:19:29,397 - INFO - User 8234178181 viewed subscribers menu
+2026-03-31 22:32:06,358 - INFO - ✅ START command from user 1074194843
+2026-03-31 22:32:09,784 - INFO - User 1074194843 viewed subscribers menu
+2026-03-31 22:32:13,588 - INFO - User 1074194843 viewed views menu
+2026-03-31 22:46:04,378 - INFO - Bot initialized successfully
+2026-03-31 22:46:05,091 - INFO - ✅ Commands set successfully
+2026-03-31 22:46:05,091 - INFO - Registering handlers...
+2026-03-31 22:46:05,092 - INFO - ✅ All handlers registered
+2026-03-31 22:46:05,092 - INFO - Registering callbacks...
+2026-03-31 22:46:05,093 - INFO - ✅ All callbacks registered
+2026-03-31 22:46:05,094 - INFO - Registering auto_views handlers...
+2026-03-31 22:46:05,094 - INFO - ✅ Auto views handlers registered
+2026-03-31 22:46:05,094 - INFO - Starting auto_renew background task...
+2026-03-31 22:46:05,095 - INFO - ✅ Auto renew task started
+2026-03-31 22:46:05,096 - INFO - === BOT STARTED ===
+2026-03-31 22:46:08,167 - INFO - === SUBS MENU DEBUG ===
+2026-03-31 22:46:08,167 - INFO - User ID: 8234178181, Balance: 100156678.0, Subs Price: 5.0
+2026-03-31 22:46:08,167 - INFO - Balance > 0: True
+2026-03-31 22:46:08,168 - INFO - === END DEBUG ===
+2026-03-31 22:46:08,831 - INFO - User 8234178181 → HAS BALANCE PATH
+2026-03-31 22:46:46,887 - INFO - === SUBS MENU DEBUG ===
+2026-03-31 22:46:46,887 - INFO - User ID: 8234178181, Balance: 100156678.0, Subs Price: 5.0
+2026-03-31 22:46:46,887 - INFO - Balance > 0: True
+2026-03-31 22:46:46,887 - INFO - === END DEBUG ===
+2026-03-31 22:46:47,593 - INFO - User 8234178181 → HAS BALANCE PATH
+2026-03-31 22:47:06,305 - INFO - User 8234178181 created subs order #8, balance charged $5.00
+2026-03-31 22:47:19,597 - INFO - User 8234178181 viewed orders menu
+2026-03-31 22:52:31,802 - INFO - Bot initialized successfully
+2026-03-31 22:52:32,749 - INFO - ✅ Commands set successfully
+2026-03-31 22:52:32,749 - INFO - Registering handlers...
+2026-03-31 22:52:32,750 - INFO - ✅ All handlers registered
+2026-03-31 22:52:32,750 - INFO - Registering callbacks...
+2026-03-31 22:52:32,751 - INFO - ✅ All callbacks registered
+2026-03-31 22:52:32,751 - INFO - Registering auto_views handlers...
+2026-03-31 22:52:32,751 - INFO - ✅ Auto views handlers registered
+2026-03-31 22:52:32,751 - INFO - Starting auto_renew background task...
+2026-03-31 22:52:32,752 - INFO - ✅ Auto renew task started
+2026-03-31 22:52:32,752 - INFO - === BOT STARTED ===
+2026-03-31 22:52:39,899 - INFO - ❌ Admin rejected subs order #8, refunded $4.00 to user 8234178181
+2026-03-31 22:52:39,973 - ERROR - Bot error: name 'reset_state' is not defined
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 104, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Users/Xaru/Desktop/bot.zakaz/callbacks/admin_callbacks.py", line 758, in process_refund_amount
+    reset_state(user_states, admin_id)
+    ^^^^^^^^^^^
+NameError: name 'reset_state' is not defined. Did you mean: 'user_states'?
+2026-04-01 00:00:11,932 - INFO - Bot initialized successfully
+2026-04-01 00:00:12,412 - INFO - ✅ Commands set successfully
+2026-04-01 00:00:12,413 - INFO - Registering handlers...
+2026-04-01 00:00:12,413 - INFO - ✅ All handlers registered
+2026-04-01 00:00:12,413 - INFO - Registering callbacks...
+2026-04-01 00:00:12,414 - INFO - ✅ All callbacks registered
+2026-04-01 00:00:12,414 - INFO - Registering auto_views handlers...
+2026-04-01 00:00:12,414 - INFO - ✅ Auto views handlers registered
+2026-04-01 00:00:12,414 - INFO - Starting auto_renew background task...
+2026-04-01 00:00:12,415 - INFO - ✅ Auto renew task started
+2026-04-01 00:00:12,415 - INFO - === BOT STARTED ===
+2026-04-01 00:00:13,530 - INFO - User 8234178181 viewed orders menu
+2026-04-01 00:00:13,533 - INFO - === SUBS MENU DEBUG ===
+2026-04-01 00:00:13,535 - INFO - User ID: 7501202985, Balance: 999377.44, Subs Price: 5.0
+2026-04-01 00:00:13,535 - INFO - Balance > 0: True
+2026-04-01 00:00:13,535 - INFO - === END DEBUG ===
+2026-04-01 00:00:13,548 - INFO - User 8234178181 viewed views menu
+2026-04-01 00:00:13,744 - INFO - User 7501202985 → HAS BALANCE PATH
+2026-04-01 00:00:19,557 - INFO - User 8234178181 viewed views menu
+2026-04-01 00:00:35,541 - INFO - === SUBS MENU DEBUG ===
+2026-04-01 00:00:35,543 - INFO - User ID: 8234178181, Balance: 100156677.0, Subs Price: 5.0
+2026-04-01 00:00:35,543 - INFO - Balance > 0: True
+2026-04-01 00:00:35,543 - INFO - === END DEBUG ===
+2026-04-01 00:00:35,732 - INFO - User 8234178181 → HAS BALANCE PATH
+2026-04-01 00:00:54,407 - INFO - User 8234178181 viewed views menu
+2026-04-01 00:03:54,446 - INFO - User 7501202985 viewed views menu
+2026-04-01 00:06:39,838 - INFO - Bot initialized successfully
+2026-04-01 00:06:40,306 - INFO - ✅ Commands set successfully
+2026-04-01 00:06:40,306 - INFO - Registering handlers...
+2026-04-01 00:06:40,307 - INFO - ✅ All handlers registered
+2026-04-01 00:06:40,307 - INFO - Registering callbacks...
+2026-04-01 00:06:40,308 - INFO - ✅ All callbacks registered
+2026-04-01 00:06:40,308 - INFO - Registering auto_views handlers...
+2026-04-01 00:06:40,308 - INFO - ✅ Auto views handlers registered
+2026-04-01 00:06:40,309 - INFO - Starting auto_renew background task...
+2026-04-01 00:06:40,309 - INFO - ✅ Auto renew task started
+2026-04-01 00:06:40,309 - INFO - === BOT STARTED ===
+2026-04-01 00:06:50,551 - INFO - User 8234178181 viewed views menu
+2026-04-01 00:07:33,278 - INFO - back_to_main clicked by 8234178181
+2026-04-01 00:07:33,788 - INFO - Main menu sent to 8234178181
+2026-04-01 00:07:42,154 - INFO - User 8234178181 viewed views menu
+2026-04-01 00:07:46,810 - INFO - === SUBS MENU DEBUG ===
+2026-04-01 00:07:46,811 - INFO - User ID: 8234178181, Balance: 100156677.0, Subs Price: 5.0
+2026-04-01 00:07:46,812 - INFO - Balance > 0: True
+2026-04-01 00:07:46,812 - INFO - === END DEBUG ===
+2026-04-01 00:07:46,977 - INFO - User 8234178181 → HAS BALANCE PATH
+2026-04-01 00:07:52,139 - INFO - User 8234178181 viewed reactions menu
+2026-04-01 00:07:54,833 - INFO - User 8234178181 viewed orders menu
+2026-04-01 00:07:56,503 - INFO - User 8234178181 viewed views menu
+2026-04-01 00:10:43,846 - INFO - Bot initialized successfully
+2026-04-01 00:10:44,429 - INFO - ✅ Commands set successfully
+2026-04-01 00:10:44,430 - INFO - Registering handlers...
+2026-04-01 00:10:44,431 - INFO - ✅ All handlers registered
+2026-04-01 00:10:44,431 - INFO - Registering callbacks...
+2026-04-01 00:10:44,432 - INFO - ✅ All callbacks registered
+2026-04-01 00:10:44,432 - INFO - Registering auto_views handlers...
+2026-04-01 00:10:44,432 - INFO - ✅ Auto views handlers registered
+2026-04-01 00:10:44,433 - INFO - Starting auto_renew background task...
+2026-04-01 00:10:44,433 - INFO - ✅ Auto renew task started
+2026-04-01 00:10:44,433 - INFO - === BOT STARTED ===
+2026-04-01 00:11:38,645 - INFO - ✅ START command from user 8234178181
+2026-04-01 00:11:40,968 - INFO - User 8234178181 viewed views menu
+2026-04-01 00:13:30,205 - INFO - Bot initialized successfully
+2026-04-01 00:13:30,669 - INFO - ✅ Commands set successfully
+2026-04-01 00:13:30,670 - INFO - Registering handlers...
+2026-04-01 00:13:30,671 - INFO - ✅ All handlers registered
+2026-04-01 00:13:30,671 - INFO - Registering callbacks...
+2026-04-01 00:13:30,671 - INFO - ✅ All callbacks registered
+2026-04-01 00:13:30,672 - INFO - Registering auto_views handlers...
+2026-04-01 00:13:30,672 - INFO - ✅ Auto views handlers registered
+2026-04-01 00:13:30,672 - INFO - Starting auto_renew background task...
+2026-04-01 00:13:30,673 - INFO - ✅ Auto renew task started
+2026-04-01 00:13:30,673 - INFO - === BOT STARTED ===
+2026-04-01 00:13:36,665 - INFO - User 8234178181 viewed views menu
+2026-04-01 01:11:55,441 - ERROR - Bot error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Xaru/Desktop/bot.zakaz/bot.py", line 104, in <module>
+    bot.polling(none_stop=True, skip_pending=False, timeout=30)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 115, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)

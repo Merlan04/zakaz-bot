@@ -8,6 +8,8 @@ from utils import reset_state
 from handlers.user_handlers import get_main_menu
 from handlers import register_all_handlers
 from callbacks import register_all_callbacks
+from handlers.auto_views_handlers import register_auto_views_handlers, start_auto_renew_task
+
 # ====================== SETUP LOGGING ======================
 def setup_logging():
     logger = logging.getLogger()
@@ -49,22 +51,7 @@ except Exception as e:
     logger.error(f"❌ Failed to set commands: {e}")
 
 
-# ====================== SIMPLE TEST HANDLERS ======================
-@bot.message_handler(commands=['start'])
-def start(message):
-    user_id = message.from_user.id
-    db.create_user_if_not_exists(user_id, message.from_user.username)
-    reset_state(user_states, user_id)
-
-    menu = get_main_menu()
-    logger.info(f"DEBUG: Menu object: {menu}")
-    logger.info(f"DEBUG: Menu type: {type(menu)}")
-
-    bot.send_message(message.chat.id, "👋 Добро пожаловать!\nВыберите услугу:",
-                     reply_markup=menu)
-    logger.info(f"✅ Message sent to {user_id} with menu")
-
-
+# ====================== TEST COMMAND ======================
 @bot.message_handler(commands=['test'])
 def test_echo(message):
     logger.info(f"✅ TEST command from user {message.from_user.id}")
@@ -85,6 +72,23 @@ try:
     logger.info("✅ All callbacks registered")
 except Exception as e:
     logger.error(f"❌ Failed to register callbacks: {e}", exc_info=True)
+
+# ====================== REGISTER AUTO VIEWS HANDLERS ======================
+logger.info("Registering auto_views handlers...")
+try:
+    register_auto_views_handlers(bot, user_states)
+    logger.info("✅ Auto views handlers registered")
+except Exception as e:
+    logger.error(f"❌ Failed to register auto_views handlers: {e}", exc_info=True)
+
+# ====================== START AUTO RENEW TASK ======================
+logger.info("Starting auto_renew background task...")
+try:
+    start_auto_renew_task(bot)
+    logger.info("✅ Auto renew task started")
+except Exception as e:
+    logger.error(f"❌ Failed to start auto_renew task: {e}", exc_info=True)
+
 
 # ====================== START BOT ======================
 if __name__ == '__main__':

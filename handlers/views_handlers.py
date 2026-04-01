@@ -1,13 +1,10 @@
 from telebot import types
 import logging
-import time
 from database import db
-from utils import (
-    validate_channel_link, extract_channel, validate_number, reset_state,
-    get_channel_name, format_active_tarifs, format_time_remaining
-)
-from utils.formatters import format_order_message
-from config import ADMIN_ID, GROUP_ID, TARIFF_VIEWS_MAP
+from config import ADMIN_ID
+from utils import reset_state
+from time import time
+import re
 
 logger = logging.getLogger(__name__)
 
@@ -15,231 +12,489 @@ logger = logging.getLogger(__name__)
 def register_views_handlers(bot, user_states):
     """Регистрировать обработчики просмотров"""
 
+    # ================ ГЛАВНОЕ МЕНЮ ПРОСМОТРОВ (ВЫБОР МЕЖДУ БАЗОВЫМ И АВТОПРОСМОТРАМИ) ================
     @bot.message_handler(func=lambda message: message.text == "👀 Просмотры")
-    def show_views_menu(message):
+    def views_main_menu(message):
+        """Главное меню просмотров - две кнопки"""
+        bot.answer_callback_query(message.from_user.id)
         user_id = message.from_user.id
-        current_time = int(time.time())
-        active = db.get_active_view_tarifs(user_id, current_time)
-
-        txt = (
-            "ℹ️ Базовый тариф позволяет делать просмотры на любое количество постов из любого количества каналов. "
-            "Для заказа просмотров в базовом тарифе нужно переслать нужную публикацию боту.\n\n"
-            "ℹ️ Автопросмотры — дополнительная платная опция, которая подхватывает новые посты в канале автоматически. "
-            "Больше информации в меню 👁‍🗨 Автопросмотры\n\n"
-            "ℹ️ Максимальное количество просмотров на каждый пост определяется купленным тарифом. "
-            "Количество просмотров и скорость накрутки выбираете сами\n\n"
-            "❗️ Пример: после покупки тарифа «1000 просмотров» вы можете делать до 1000 просмотров на любое количество постов "
-            "из 1 канала в течение 10 дней\n\n"
-        )
-
-        if active:
-            txt += f"👁 Активные тарифы: {len(active)}\n\n"
-
-        txt += "👉 Для заказа просмотров сделайте сюда репост или вставьте ссылку:"
-
-        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
-        markup.add("👁️ Базовый тариф", "👁️‍🗨️ Автопросмотры")
-        markup.add("🔙 Назад")
-
-        bot.send_message(message.chat.id, txt, reply_markup=markup)
-
-    @bot.message_handler(func=lambda message: message.text == "👁️ Базовый тариф")
-    def show_basic_tariffs(message):
-        markup = types.InlineKeyboardMarkup(row_width=2)
-        tarifs = db.get_view_tarifs()
-        buttons = [types.InlineKeyboardButton(f"{t.upper()} • ${price}", callback_data=f"buy_tarif_{t}")
-                   for t, price in tarifs]
-
-        if len(buttons) >= 4:
-            markup.row(buttons[0], buttons[2])
-            markup.row(buttons[1], buttons[3])
-            if len(buttons) > 4:
-                markup.row(buttons[4])
-
-        bot.send_message(message.chat.id, "Выберите тариф для базовых просмотров:", reply_markup=markup)
-
-    @bot.message_handler(func=lambda message: message.text == "👁️‍🗨️ Автопросмотры")
-    def show_auto_views(message):
-        user_id = message.from_user.id
-        current_time = int(time.time())
-        active = db.get_active_view_tarifs(user_id, current_time)
-
-        info = (
-            "ℹ️ Автопросмотры - дополнительная опция, работает только с купленным базовым тарифом и оплачивается отдельно 0.1$/день за каждый канал (кнопка «Продлить»)\n\n"
-            "ℹ️ На каналах с автопросмотрами накрутка на новые посты начинается автоматически в течение 3 мин после публикации (если добавите бота @susunodbot в админы - будет быстрей и стабильней, нужны любые права), на старые посты делайте вручную репостом\n\n"
-            "ℹ️ Вы выставляете желаемое количество просмотров, но цифры на разных постах будут различаться для реалистичности.\n\n"
-            "ℹ️ При подхвате репоста из другого канала в канал на автопросмотрах — снимается 0.01$ с баланса, если баланс пустой — репосты пропускаются\n\n"
-            "ℹ️ При отключении канала деньги за оставшиеся полные дни возвращаются\n\n"
-            "ℹ️ Опция защита от копирования в настройках канала должна быть выключена"
-        )
-
-        bot.send_message(message.chat.id, info)
-
-        if active:
-            txt = format_active_tarifs(active)
-            markup = types.InlineKeyboardMarkup(row_width=2)
-
-            for tar, end, link, views in active:
-                markup.add(
-                    types.InlineKeyboardButton("✏️ Изменить", callback_data=f"edit_auto_{link}"),
-                    types.InlineKeyboardButton("📆 Продлить", callback_data=f"prolong_auto_{link}")
-                )
-
-            bot.send_message(message.chat.id, txt, reply_markup=markup)
-
-    @bot.message_handler(func=lambda message: user_states.get(message.from_user.id, {}).get("step") == "auto_view_link")
-    def auto_view_link_handler(message):
-        user_id = message.from_user.id
-        link = message.text.strip()
-
-        if not validate_channel_link(link):
-            bot.send_message(message.chat.id, "⚠️ Неправильный формат.\n👉 Введите правильную ссылку:")
-            return
-
-        channel = extract_channel(link)
-        ch_name = get_channel_name(bot, link)
-
-        current_time = int(time.time())
-        active = db.get_active_view_tarifs(user_id, current_time)
-
-        for _, _, ex_link, _ in active:
-            if ex_link == channel:
-                bot.send_message(message.chat.id,
-                                 f"⚠️ Ваш канал: *{ch_name}*\nАвтопросмотры на этот канал уже подключены.\n\n👉 Управляйте уже созданным заказом или сначала отключите его",
-                                 parse_mode='HTML')
-                reset_state(user_states, user_id)
-                return
-
-        tarif = user_states[user_id]["tarif"]
-        max_views = TARIFF_VIEWS_MAP.get(tarif, 1000)
-
-        bot.send_message(message.chat.id,
-                         f"✅ Ваш канал: {ch_name}\n\n"
-                         f"🌀 Ваш тариф позволяет делать до {max_views} просмотров на каждый пост.\n\n"
-                         f"👉 Введите желаемое количество просмотров:")
-
-        user_states[user_id]["step"] = "auto_view_qty"
-        user_states[user_id]["link"] = channel
-        user_states[user_id]["ch_name"] = ch_name
-
-    @bot.message_handler(func=lambda message: user_states.get(message.from_user.id, {}).get("step") == "auto_view_qty")
-    def auto_view_qty_handler(message):
-        user_id = message.from_user.id
-        text = message.text.strip()
-
-        if not text.isdigit():
-            bot.send_message(message.chat.id, "⚠️ Неправильное число. Введите правильное:")
-            return
-
-        qty = int(text)
-        tarif = user_states[user_id]["tarif"]
-        max_views = TARIFF_VIEWS_MAP.get(tarif, 1000)
-
-        if qty < 1 or qty > max_views:
-            bot.send_message(message.chat.id, f"⚠️ Введите число больше 0 и меньше {max_views}")
-            return
-
-        user_states[user_id]["qty"] = qty
-        user_states[user_id]["step"] = "auto_view_hours"
-
-        bot.send_message(message.chat.id,
-                         "⏱️ На сколько часов растянуть просмотры на 1 пост?\n"
-                         "👉 Укажите количество часов или 0, если хотите максимальную скорость:")
-
-    @bot.message_handler(
-        func=lambda message: user_states.get(message.from_user.id, {}).get("step") == "auto_view_hours")
-    def auto_view_hours_handler(message):
-        user_id = message.from_user.id
-        text = message.text.strip()
-
-        if not text.isdigit():
-            bot.send_message(message.chat.id, "⚠️ Неправильное число. Введите правильное:")
-            return
-
-        hrs = int(text)
-        min_h = int(db.get_setting('subs_min_hrs'))
-        max_h = int(db.get_setting('subs_max_hrs'))
-
-        if hrs < min_h or hrs > max_h:
-            bot.send_message(message.chat.id, f"⚠️ Введите число от {min_h} до {max_h}")
-            return
-
-        qty = user_states[user_id]["qty"]
-        tarif = user_states[user_id]["tarif"]
-        link = user_states[user_id]["link"]
-        price = user_states[user_id]["price"]
-
-        real_balance = db.get_user_balance(user_id)
-
-        if real_balance < price:
-            reset_state(user_states, user_id)
-            bot.send_message(message.chat.id, "❌ Недостаточно средств",
-                             reply_markup=get_views_menu_markup())
-            return
-
-        # Обновить баланс
-        db.update_balance(user_id, -price, price)
-
-        # Создать тариф автопросмотров
-        current_time = int(time.time())
-        duration = 10 * 24 * 3600  # 10 days
-        db.create_auto_view_tarif(user_id, tarif, link, qty, current_time, duration)
-
-        # Создать заказ
-        order_id = db.create_order(
-            user_id,
-            f"Автопросмотры ({tarif.upper()})",
-            link,
-            qty,
-            price,
-            hrs
-        )
-
         reset_state(user_states, user_id)
-        bot.send_message(message.chat.id, "✅ Заказ принят. Можете посмотреть статус в меню «Автопросмотры»",
-                         reply_markup=get_views_menu_markup())
 
-        # 🔴 УВЕДОМИТЬ ГРУППУ (не админа!)
-        from callbacks.order_callbacks import get_status_markup
-        order_details = format_order_message(order_id, f"Автопросмотры ({tarif.upper()})", qty, price, hrs, link,
-                                             user_id)
+        balance = db.get_user_balance(user_id)
+
+        info_message = (
+            "ℹ️ <b>Базовый тариф</b> позволяет делать просмотры на любое количество постов из любого количества каналов.\n\n"
+            "ℹ️ <b>Автопросмотры</b> — это список активных тарифов, которые вы подключили.\n\n"
+        )
+
+        markup = types.InlineKeyboardMarkup(row_width=1)
+        markup.add(
+            types.InlineKeyboardButton("👁️ Базовый тариф", callback_data="views_basic_tariff"),
+            types.InlineKeyboardButton("👁️‍🗨️ Автопросмотры", callback_data="views_auto_menu")
+        )
+        markup.add(types.InlineKeyboardButton("🔙 Назад", callback_data="back_to_main"))
+
+        bot.send_message(message.chat.id, info_message, reply_markup=markup, parse_mode='HTML')
+        logger.info(f"User {user_id} opened views main menu (balance: ${balance:.2f})")
+
+    # ================ БАЗОВЫЙ ТАРИФ - ВЫБОР ТАРИФА ================
+    @bot.callback_query_handler(func=lambda call: call.data == "views_basic_tariff")
+    def views_basic_tariff(call):
+        """Выбор тарифа для базового тарифа"""
+        bot.answer_callback_query(call.id)
+        user_id = call.from_user.id
+        balance = db.get_user_balance(user_id)
+
+        if balance <= 0:
+            bot.send_message(call.message.chat.id,
+                           "⚠️ <b>Необходимо пополнить баланс для заказа услуг</b>",
+                           parse_mode='HTML')
+            return
+
+        tariffs = db.get_view_tarifs()
+
+        tariff_message = "👁️ <b>Базовый тариф</b>\n\nВыберите тариф для автоматических просмотров:\n\n"
+
+        markup = types.InlineKeyboardMarkup(row_width=2)
+
+        for tarif_type, price in tariffs:
+            max_views = get_max_views_for_tarif(tarif_type)
+            tariff_message += f"• <b>{max_views:,}</b> • ${price:.2f}\n"
+            markup.add(types.InlineKeyboardButton(f"{max_views:,}  •  ${price:.2f}",
+                                                  callback_data=f"select_views_tarif_{tarif_type}"))
+
+        markup.add(types.InlineKeyboardButton("🔙 Назад", callback_data="back_to_views_main"))
+
+        bot.send_message(call.message.chat.id, tariff_message, reply_markup=markup, parse_mode='HTML')
+        logger.info(f"User {user_id} viewing basic tariff selection")
+
+    # ================ ВЫБРАН ТАРИФ - ВВОД КАНАЛА ================
+    @bot.callback_query_handler(func=lambda call: call.data.startswith("select_views_tarif_"))
+    def select_views_tarif(call):
+        """Выбор тарифа - просит ссылку канала"""
+        bot.answer_callback_query(call.id)
+        user_id = call.from_user.id
+
+        tarif_type = call.data.replace("select_views_tarif_", "")
+        price = db.get_tarif_price(tarif_type)
+        balance = db.get_user_balance(user_id)
+        max_views = get_max_views_for_tarif(tarif_type)
+
+        if balance < price:
+            bot.send_message(call.message.chat.id,
+                           f"❌ <b>НЕДОСТАТОЧНО СРЕДСТВ</b>\n\n"
+                           f"💰 Необходимо: ${price:.2f}\n"
+                           f"💰 Баланс: ${balance:.2f}",
+                           parse_mode='HTML')
+            return
+
+        user_states[user_id] = {
+            "step": "entering_views_channel",
+            "tarif_type": tarif_type,
+            "price": price,
+            "max_views": max_views
+        }
+
+        msg = bot.send_message(call.message.chat.id,
+                             f"👁️ <b>Базовый тариф</b>\n\n"
+                             f"👉 Введите ссылку на канал, чтобы подключить функцию автоматического просмотра к каналу для этого тарифного плана:",
+                             parse_mode='HTML')
+
+        bot.register_next_step_handler(msg, process_views_channel, bot, user_states)
+
+    def process_views_channel(message, bot, user_states):
+        """Обработка ссылки канала"""
+        user_id = message.from_user.id
+        channel_link = message.text.strip()
+
+        if not channel_link:
+            bot.send_message(message.chat.id, "❌ Пожалуйста, введите ссылку на канал")
+            return
+
+        if not (channel_link.startswith('https://') or channel_link.startswith('@')):
+            bot.send_message(message.chat.id, "❌ Неверный формат ссылки\nПримеры: https://t.me/channel или @channel")
+            return
+
+        if user_id not in user_states:
+            user_states[user_id] = {}
+
+        user_states[user_id]["channel_link"] = channel_link
+        user_states[user_id]["step"] = "entering_views_count"
+
+        max_views = user_states[user_id].get("max_views", 1000)
+
+        msg = bot.send_message(message.chat.id,
+                             f"✅ Ваш канал: {channel_link}\n\n"
+                             f"🌀 Ваш тариф позволяет делать до {max_views:,} просмотров на каждый пост.\n\n"
+                             f"👉 Введите желаемое количество просмотров:",
+                             parse_mode='HTML')
+
+        bot.register_next_step_handler(msg, process_views_count, bot, user_states)
+
+    def process_views_count(message, bot, user_states):
+        """Обработка количества просмотров"""
+        user_id = message.from_user.id
 
         try:
-            bot.send_message(GROUP_ID, order_details, reply_markup=get_status_markup(order_id))
-            logger.info(f"Auto-view order #{order_id} sent to group {GROUP_ID}")
-        except Exception as e:
-            logger.error(f"Failed to send auto-view order to group: {e}")
-            # Если группа недоступна, отправить админу
-            bot.send_message(ADMIN_ID, f"⚠️ Не удалось отправить в группу:\n{order_details}",
-                             reply_markup=get_status_markup(order_id))
+            views_count = int(message.text.strip())
+        except ValueError:
+            bot.send_message(message.chat.id, "❌ Пожалуйста, введите число")
+            return
 
-    @bot.message_handler(
-        func=lambda message: user_states.get(message.from_user.id, {}).get("step") == "change_views_qty")
-    def change_views_qty_handler(message):
+        if user_id not in user_states:
+            user_states[user_id] = {}
+
+        max_views = user_states[user_id].get("max_views", 1000)
+
+        if views_count < 100:
+            msg = bot.send_message(message.chat.id, f"⚠️ Введите число больше 100:")
+            bot.register_next_step_handler(msg, process_views_count, bot, user_states)
+            return
+
+        if views_count > max_views:
+            msg = bot.send_message(message.chat.id,
+                                 f"⚠️ Максимум для вашего тарифа: {max_views:,}\n\n"
+                                 f"👉 Введите число до {max_views:,}:")
+            bot.register_next_step_handler(msg, process_views_count, bot, user_states)
+            return
+
+        user_states[user_id]["views_count"] = views_count
+        user_states[user_id]["step"] = "entering_views_hours"
+
+        msg = bot.send_message(message.chat.id,
+                             f"⏱️ <b>На сколько часов растянуть просмотры на 1 пост?</b>\n\n"
+                             f"👉 Укажите количество часов или 0, если хотите максимальную скорость:",
+                             parse_mode='HTML')
+
+        bot.register_next_step_handler(msg, process_views_hours, bot, user_states)
+
+    def process_views_hours(message, bot, user_states):
+        """Обработка часов и СПИСАНИЕ ДЕНЕГ"""
         user_id = message.from_user.id
-        text = message.text.strip()
 
-        if not text.isdigit():
-            bot.send_message(message.chat.id, "⚠️ Неправильное число. Введите правильное:")
+        try:
+            hours = int(message.text.strip())
+        except ValueError:
+            bot.send_message(message.chat.id, "❌ Пожалуйста, введите число")
             return
 
-        qty = int(text)
-        max_v = TARIFF_VIEWS_MAP.get(user_states[user_id]["tarif"], 1000)
-
-        if qty < 1 or qty > max_v:
-            bot.send_message(message.chat.id, f"⚠️ Введите число больше 0 и меньше {max_v}")
+        if hours < 0:
+            bot.send_message(message.chat.id, "❌ Число не может быть отрицательным")
             return
 
-        channel_link = user_states[user_id]["channel_link"]
-        db.update_auto_view_views(user_id, channel_link, qty)
+        if hours > 5 and hours != 0:
+            msg = bot.send_message(message.chat.id, "⚠️ Введите число от 1 до 5")
+            bot.register_next_step_handler(msg, process_views_hours, bot, user_states)
+            return
 
-        bot.send_message(message.chat.id, "✅ Изменения сохранены")
+        if user_id not in user_states:
+            user_states[user_id] = {}
+
+        channel_link = user_states[user_id].get("channel_link")
+        views_count = user_states[user_id].get("views_count")
+        tarif_type = user_states[user_id].get("tarif_type")
+        price = user_states[user_id].get("price")
+        max_views = user_states[user_id].get("max_views")
+        balance = db.get_user_balance(user_id)
+
+        if balance < price:
+            bot.send_message(message.chat.id,
+                           f"❌ <b>НЕДОСТАТОЧНО СРЕДСТВ</b>\n\n"
+                           f"Баланс изменился. Попробуйте снова.",
+                           parse_mode='HTML')
+            reset_state(user_states, user_id)
+            return
+
+        # ✅ СПИСЫВАЕМ ДЕНЬГИ
+        db.update_balance(user_id, -price, price)
+        new_balance = db.get_user_balance(user_id)
+
+        # ✅ СОЗДАЕМ ЗАКАЗ ПРОСМОТРОВ В БД (как автопросмотр на канал)
+        current_time = int(time())
+        end_time = current_time + (30 * 86400)  # 30 дней
+
+        auto_tarif_id = db.create_auto_view_tarif(
+            user_id=user_id,
+            tarif_type=tarif_type,
+            channel_name=channel_link,
+            views_count=views_count,
+            duration_hours=hours
+        )
+
+        # ✅ СООБЩЕНИЕ ПОЛЬЗОВАТЕЛЮ
+        bot.send_message(message.chat.id,
+                       f"✅ Заказ принят. Можете посмотреть статус в меню «Автопросмотры»",
+                       parse_mode='HTML')
+
+        # ✅ УВЕДОМЛЕНИЕ АДМИНУ
+        admin_message = (
+            f"Новый заказ просмотров\n"
+            f"Тариф ID: #{auto_tarif_id}\n"
+            f"User: {user_id}\n"
+            f"Канал: {channel_link}\n"
+            f"Просмотров: {views_count:,}\n"
+            f"Часов: {hours if hours > 0 else '∞'}\n"
+            f"Тариф: {max_views:,} просмотров\n"
+            f"Сумма: ${price:.2f}"
+        )
+
+        markup = types.InlineKeyboardMarkup(row_width=2)
+        markup.add(
+            types.InlineKeyboardButton("✅ Одобрить", callback_data=f"admin_approve_auto_view_{auto_tarif_id}"),
+            types.InlineKeyboardButton("❌ Отклонить", callback_data=f"admin_reject_auto_view_{auto_tarif_id}")
+        )
+
+        bot.send_message(ADMIN_ID, admin_message, reply_markup=markup, parse_mode='HTML')
+
+        logger.info(f"User {user_id} created views order, balance charged ${price:.2f}")
         reset_state(user_states, user_id)
 
+    # ================ АВТОПРОСМОТРЫ - ПОКАЗАТЬ СПИСОК АКТИВНЫХ ================
+    @bot.callback_query_handler(func=lambda call: call.data == "views_auto_menu")
+    def views_auto_menu(call):
+        """Меню автопросмотров - список активных тарифов"""
+        bot.answer_callback_query(call.id)
+        user_id = call.from_user.id
+        reset_state(user_states, user_id)
 
-def get_views_menu_markup():
-    """Получить меню просмотров"""
-    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
-    markup.add("👁️ Базовый тариф", "👁️‍🗨️ Автопросмотры")
-    markup.add("🔙 Назад")
-    return markup
+        current_time = int(time())
+        active_tarifs = db.get_active_auto_view_tarifs(user_id, current_time)
+
+        if not active_tarifs:
+            msg = "👁️‍🗨️ <b>АВТОПРОСМОТРЫ</b>\n\n"
+            msg += "У вас пока нет активных тарифов.\n"
+            msg += "Приобретите через 👁️ Базовый тариф"
+
+            markup = types.InlineKeyboardMarkup()
+            markup.add(types.InlineKeyboardButton("🔙 Назад", callback_data="back_to_views_main"))
+
+            bot.send_message(call.message.chat.id, msg, reply_markup=markup, parse_mode='HTML')
+            return
+
+        # Показываем список с кнопками
+        msg = "👁️‍🗨️ <b>АВТОПРОСМОТРЫ</b>\n\n"
+
+        markup = types.InlineKeyboardMarkup(row_width=1)
+
+        for tarif_id, tarif_type, channel_name, end_time, views_per_post in active_tarifs:
+            max_views = get_max_views_for_tarif(tarif_type)
+            remaining_time = format_remaining_time(end_time - current_time)
+
+            msg += (
+                f"📌 <b>{channel_name}</b>\n"
+                f"👁️ {views_per_post:,} просмотров ({max_views:,} макс)\n"
+                f"⏱️ Осталось: {remaining_time}\n\n"
+            )
+
+            markup.add(
+                types.InlineKeyboardButton("📝 Изменить", callback_data=f"views_edit_{tarif_id}"),
+                types.InlineKeyboardButton("🔄 Продлить", callback_data=f"views_prolong_{tarif_id}")
+            )
+
+        markup.add(types.InlineKeyboardButton("🔙 Назад", callback_data="back_to_views_main"))
+
+        bot.send_message(call.message.chat.id, msg, reply_markup=markup, parse_mode='HTML')
+        logger.info(f"User {user_id} viewing auto views ({len(active_tarifs)} active)")
+
+    # ================ ПРОДЛИТЬ ТАРИФ ================
+    @bot.callback_query_handler(func=lambda call: call.data.startswith("views_prolong_"))
+    def views_prolong(call):
+        """Продление тарифа"""
+        bot.answer_callback_query(call.id)
+        user_id = call.from_user.id
+        tarif_id = int(call.data.replace("views_prolong_", ""))
+
+        user_states[user_id] = {"step": "confirming_prolong", "tarif_id": tarif_id}
+
+        msg = (
+            "⚠️ <b>ПРОДЛЕНИЕ ТАРИФ</b>\n\n"
+            "После подтверждения тариф продлится еще на 30 дней и средства будут списаны с вашего баланса.\n\n"
+            "Продолжить?"
+        )
+
+        markup = types.InlineKeyboardMarkup()
+        markup.add(
+            types.InlineKeyboardButton("✅ Да, продлить", callback_data=f"confirm_views_prolong_{tarif_id}"),
+            types.InlineKeyboardButton("❌ Отмена", callback_data="cancel_views_prolong")
+        )
+
+        bot.send_message(call.message.chat.id, msg, reply_markup=markup, parse_mode='HTML')
+
+    @bot.callback_query_handler(func=lambda call: call.data.startswith("confirm_views_prolong_"))
+    def confirm_views_prolong(call):
+        """Подтвердить продление"""
+        bot.answer_callback_query(call.id)
+        user_id = call.from_user.id
+        tarif_id = int(call.data.replace("confirm_views_prolong_", ""))
+
+        tarif_info = db.get_auto_view_tarif(tarif_id)
+        if not tarif_info:
+            bot.send_message(call.message.chat.id, "❌ Тариф не найден")
+            return
+
+        tarif_type, channel_name, views_per_post = tarif_info
+        price = db.get_tarif_price(tarif_type)
+        balance = db.get_user_balance(user_id)
+
+        if balance < price:
+            bot.send_message(call.message.chat.id,
+                           f"❌ <b>НЕДОСТАТОЧНО СРЕДСТВ</b>\n\n"
+                           f"💰 Необходимо: ${price:.2f}\n"
+                           f"💰 Баланс: ${balance:.2f}",
+                           parse_mode='HTML')
+            return
+
+        # ✅ СПИСЫВАЕМ ДЕНЬГИ
+        db.update_balance(user_id, -price, price)
+        new_balance = db.get_user_balance(user_id)
+
+        # ✅ ПРОДЛЯЕМ ТАРИФ
+        db.prolong_auto_view_new(tarif_id, 30)
+
+        # ✅ УВЕДОМЛЯЕМ ПОЛЬЗОВАТЕЛЯ
+        bot.send_message(call.message.chat.id,
+                       f"✅ <b>ТАРИФ ПРОДЛЁН</b>\n\n"
+                       f"Канал: {channel_name}\n"
+                       f"Сумма: ${price:.2f}\n"
+                       f"Новый баланс: ${new_balance:.2f}",
+                       parse_mode='HTML')
+
+        # ✅ УВЕДОМЛЯЕМ АДМИНА
+        admin_msg = (
+            f"Продление тарифа\n"
+            f"User: {user_id}\n"
+            f"Тариф ID: #{tarif_id}\n"
+            f"Канал: {channel_name}\n"
+            f"Сумма: ${price:.2f}\n"
+            f"Статус: На одобрение"
+        )
+
+        markup = types.InlineKeyboardMarkup()
+        markup.add(
+            types.InlineKeyboardButton("✅ Одобрить", callback_data=f"admin_approve_prolong_{tarif_id}"),
+            types.InlineKeyboardButton("❌ Отклонить", callback_data=f"admin_reject_prolong_{tarif_id}")
+        )
+
+        bot.send_message(ADMIN_ID, admin_msg, reply_markup=markup, parse_mode='HTML')
+
+        reset_state(user_states, user_id)
+        logger.info(f"User {user_id} requested prolong for tarif {tarif_id}")
+
+    @bot.callback_query_handler(func=lambda call: call.data == "cancel_views_prolong")
+    def cancel_views_prolong(call):
+        """Отмена продления"""
+        bot.answer_callback_query(call.id)
+        user_id = call.from_user.id
+        reset_state(user_states, user_id)
+        bot.send_message(call.message.chat.id, "❌ Продление отменено")
+
+    # ================ ИЗМЕНИТЬ КАНАЛ ================
+    @bot.callback_query_handler(func=lambda call: call.data.startswith("views_edit_"))
+    def views_edit(call):
+        """Изменить канал тарифа"""
+        bot.answer_callback_query(call.id)
+        user_id = call.from_user.id
+        tarif_id = int(call.data.replace("views_edit_", ""))
+
+        user_states[user_id] = {"step": "entering_new_channel", "tarif_id": tarif_id}
+
+        msg = bot.send_message(call.message.chat.id,
+                             "👉 Введите новую ссылку на канал:",
+                             parse_mode='HTML')
+
+        bot.register_next_step_handler(msg, process_edit_channel, bot, user_states)
+
+    def process_edit_channel(message, bot, user_states):
+        """Обработка новой ссылки канала"""
+        user_id = message.from_user.id
+        new_channel = message.text.strip()
+
+        if not new_channel:
+            bot.send_message(message.chat.id, "❌ Пожалуйста, введите ссылку на канал")
+            return
+
+        if not (new_channel.startswith('https://') or new_channel.startswith('@')):
+            bot.send_message(message.chat.id, "❌ Неверный формат ссылки")
+            return
+
+        tarif_id = user_states.get(user_id, {}).get("tarif_id")
+        if not tarif_id:
+            bot.send_message(message.chat.id, "❌ Ошибка: тариф не найден")
+            return
+
+        tarif_info = db.get_auto_view_tarif(tarif_id)
+        if not tarif_info:
+            bot.send_message(message.chat.id, "❌ Тариф не найден в БД")
+            return
+
+        tarif_type, old_channel, views_per_post = tarif_info
+
+        # ✅ УВЕДОМЛЯЕМ ПОЛЬЗОВАТЕЛЯ
+        bot.send_message(message.chat.id,
+                       f"✅ <b>ЗАПРОС ОТПРАВЛЕН</b>\n\n"
+                       f"Старый канал: {old_channel}\n"
+                       f"Новый канал: {new_channel}\n\n"
+                       f"⏳ Ожидайте одобрения администратора",
+                       parse_mode='HTML')
+
+        # ✅ УВЕДОМЛЯЕМ АДМИНА
+        admin_msg = (
+            f"Изменение канала в тарифе\n"
+            f"User: {user_id}\n"
+            f"Тариф ID: #{tarif_id}\n"
+            f"Старый канал: {old_channel}\n"
+            f"Новый канал: {new_channel}\n"
+            f"Статус: На одобрение"
+        )
+
+        markup = types.InlineKeyboardMarkup()
+        markup.add(
+            types.InlineKeyboardButton("✅ Одобрить", callback_data=f"admin_approve_channel_{tarif_id}_{new_channel}"),
+            types.InlineKeyboardButton("❌ Отклонить", callback_data=f"admin_reject_channel_{tarif_id}")
+        )
+
+        bot.send_message(ADMIN_ID, admin_msg, reply_markup=markup, parse_mode='HTML')
+
+        reset_state(user_states, user_id)
+        logger.info(f"User {user_id} requested channel change for tarif {tarif_id}")
+
+    # ================ ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ ================
+    @bot.callback_query_handler(func=lambda call: call.data == "back_to_views_main")
+    def back_to_views_main(call):
+        """Назад в главное меню просмотров"""
+        bot.answer_callback_query(call.id)
+        user_id = call.from_user.id
+        reset_state(user_states, user_id)
+
+        info_message = (
+            "ℹ️ <b>Базовый тариф</b> позволяет делать просмотры на любое количество постов из любого количества каналов.\n\n"
+            "ℹ️ <b>Автопросмотры</b> — это список активных тарифов, которые вы подключили.\n\n"
+        )
+
+        markup = types.InlineKeyboardMarkup(row_width=1)
+        markup.add(
+            types.InlineKeyboardButton("👁️ Базовый тариф", callback_data="views_basic_tariff"),
+            types.InlineKeyboardButton("👁️‍🗨️ Автопросмотры", callback_data="views_auto_menu")
+        )
+        markup.add(types.InlineKeyboardButton("🔙 Назад", callback_data="back_to_main"))
+
+        bot.send_message(call.message.chat.id, info_message, reply_markup=markup, parse_mode='HTML')
+
+
+def get_max_views_for_tarif(tarif_type):
+    """Максимум просмотров для тарифа"""
+    return {
+        '1k': 1000, '5k': 5000, '10k': 10000,
+        '15k': 15000, '20k': 20000
+    }.get(tarif_type, 1000)
+
+
+def format_remaining_time(seconds):
+    """Форматировать время"""
+    if seconds <= 0:
+        return "Истёк"
+    days = seconds // 86400
+    hours = (seconds % 86400) // 3600
+    if days > 0:
+        return f"{days}д {hours}ч"
+    return f"{hours}ч"

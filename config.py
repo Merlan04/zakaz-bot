@@ -16,12 +16,10 @@ DB_NAME = 'bot_database.db'
 
 # Default settings for orders
 DEFAULT_SETTINGS = {
-    'subs_price': 5.0,
-    'subs_min_qty': 1000,
-    'subs_max_qty': 1000000,
-    'subs_min_hrs': 0,
-    'subs_max_hrs': 200,
-    'min_deposit': 5.0
+    'subs_price': 0.1,      # Цена за 1000 подписчиков
+    'subs_min_qty': 1000,   # Минимум подписчиков
+    'subs_max_qty': 50000,  # Максимум подписчиков
+    # ... остальные настройки
 }
 
 # View tariffs
